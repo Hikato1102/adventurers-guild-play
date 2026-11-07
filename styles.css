@@ -164,21 +164,21 @@ button {
   position: relative;
   z-index: 2;
   display: flex;
-  gap: 6px;
-  padding: 4px 12px 0;
+  gap: 4px;
+  padding: 4px 10px 0;
   flex: 1 1 auto;
   height: auto;
-  max-height: 30vh; /* 半身場景，騰位畀地城橫條 */
-  min-height: 180px;
+  max-height: 42vh; /* 放大公會窗，莉莉面清楚 */
+  min-height: 220px;
 }
 
 .side-rail {
-  width: 54px;
+  width: 44px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  gap: 2px;
 }
 .rail-tag {
   width: 100%;
@@ -223,10 +223,12 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 12%;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   display: block;
+  transform: scale(1.12);
+  transform-origin: center top;
 }
 .head-slot.active {
   border-color: var(--k-gold);
@@ -237,7 +239,7 @@ button {
 .head-slot:active { transform: scale(.96); }
 
 .service-window {
-  flex: 1;
+  flex: 1.55;
   min-width: 0;
   display: flex;
   min-height: 0;
@@ -880,9 +882,10 @@ button {
 .toast {
   position: absolute;
   left: 50%;
-  bottom: 18%;
+  top: 8%;
+  bottom: auto;
   transform: translateX(-50%);
-  z-index: 20;
+  z-index: 18;
   max-width: 86%;
   padding: 8px 14px;
   background: rgba(106, 74, 50, .92);
@@ -1001,7 +1004,7 @@ button {
 }
 
 @media (max-height: 780px) {
-  .window-row { flex: 0 0 auto; height: 140px; max-height: 20vh; min-height: 120px; }
+  .window-row { flex: 1 1 auto; height: auto; max-height: 36vh; min-height: 180px; }
   .slot span { display: none; }
   .dialogue { min-height: 30px; }
   .quest-tile .q-name { font-size: 9px; min-height: 2.2em; }
@@ -1278,7 +1281,7 @@ button {
 /* round4: weather + frames (subtle) + trap marker */
 #weather-ico { width: 14px; height: 14px; }
 .dialogue.framed {
-  background-image: url('assets/ui/bubble-speech.png?v=1794067500');
+  background-image: url('assets/ui/bubble-speech.png?v=1794067600');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1413,12 +1416,12 @@ button {
   cursor: url('assets/ui/cursor-talk.png?v=1794058800') 4 0, pointer;
 }
 .slot.empty {
-  background-image: url('assets/ui/inv-slot.png?v=1794067500');
+  background-image: url('assets/ui/inv-slot.png?v=1794067600');
   background-size: cover;
   background-position: center;
 }
 .slot.locked {
-  background-image: url('assets/ui/inv-lock.png?v=1794067500');
+  background-image: url('assets/ui/inv-lock.png?v=1794067600');
   background-size: cover;
   background-position: center;
   opacity: .85;
@@ -2676,3 +2679,101 @@ button {
 .ranch-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
 .ranch-ico { width: 36px; height: 36px; object-fit: contain; image-rendering: pixelated; }
 .ranch-label { font-size: 12px; opacity: .9; }
+
+
+/* —— UI cleanup：預設少裝飾，放大公會窗 —— */
+.window-props .prop {
+  display: none;
+}
+.window-props .prop.prop-always,
+.window-props .prop.prop-temp-show {
+  display: block;
+  opacity: .88;
+  max-width: 28px !important;
+  width: 10% !important;
+  z-index: 2;
+}
+/* 輕裝飾唔遮莉莉面（角落） */
+.window-props .prop-tea { left: 6%; bottom: 6%; top: auto; right: auto; }
+.window-props .prop-plant { right: 4%; top: 6%; left: auto; bottom: auto; }
+.window-props .prop-bell { right: 6%; top: 4%; left: auto; bottom: auto; }
+
+/* 頭像：平時少 badge；active 最多留 job-badge */
+.head-slot .pos-badge,
+.head-slot .leader-badge,
+.head-slot .status-row,
+.head-slot .status-ico,
+.head-slot .skill-ico,
+.head-slot .cd-ready,
+.head-slot .empty-mark,
+.head-slot .head-bars {
+  display: none !important;
+}
+.head-slot:not(.active) .job-badge { display: none !important; }
+.head-slot.active .job-badge {
+  display: block !important;
+  width: 16px;
+  height: 16px;
+  right: 2px;
+  bottom: 2px;
+}
+
+/* 任務卡減噪音 */
+.quest-tile .q-tag,
+.quest-tile .q-type,
+.quest-tile .q-power,
+.quest-tile .q-special,
+.quest-tile .q-party,
+.quest-tile .q-poster-wrap,
+.quest-tile .q-poster,
+.quest-tile .q-poster-frame,
+.quest-tile .q-poster-seal,
+.quest-tile .q-poster-pin,
+.quest-tile .q-marker,
+.quest-tile .q-rarity-frame,
+.quest-tile .q-el,
+.quest-tile .q-gem,
+.quest-tile .q-stars,
+.quest-tile .rarity-stars {
+  display: none !important;
+}
+.quest-tile {
+  min-height: 0;
+  padding: 8px 8px 22px;
+  gap: 3px;
+}
+.quest-tile .q-name {
+  font-size: 11px;
+  min-height: 0;
+  -webkit-line-clamp: 2;
+  font-weight: 900;
+}
+.quest-tile .q-rarity {
+  font-size: 9px;
+  padding: 1px 6px;
+}
+.quest-tile .q-rate {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.quest-tile .q-heads { font-size: 11px; }
+.quest-tile .q-reward { font-size: 10px; }
+
+/* emoji／慶祝唔遮任務同對話 */
+.emoji-bubble {
+  top: 4px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  z-index: 3;
+  opacity: 0.85;
+}
+.celebrate-overlay {
+  pointer-events: none;
+  z-index: 12;
+}
+.celebrate-overlay .cele-piece { opacity: .55; }
+
+/* 對話區保清晰 */
+.dialogue-panel { z-index: 4; }
+.quest-row { z-index: 3; }
