@@ -1277,7 +1277,7 @@ button {
 /* round4: weather + frames (subtle) + trap marker */
 #weather-ico { width: 14px; height: 14px; }
 .dialogue.framed {
-  background-image: url('assets/ui/bubble-speech.png?v=1794067700');
+  background-image: url('assets/ui/bubble-speech.png?v=1794067800');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1412,12 +1412,12 @@ button {
   cursor: url('assets/ui/cursor-talk.png?v=1794058800') 4 0, pointer;
 }
 .slot.empty {
-  background-image: url('assets/ui/inv-slot.png?v=1794067700');
+  background-image: url('assets/ui/inv-slot.png?v=1794067800');
   background-size: cover;
   background-position: center;
 }
 .slot.locked {
-  background-image: url('assets/ui/inv-lock.png?v=1794067700');
+  background-image: url('assets/ui/inv-lock.png?v=1794067800');
   background-size: cover;
   background-position: center;
   opacity: .85;
