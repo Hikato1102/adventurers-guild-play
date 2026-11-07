@@ -594,20 +594,20 @@ button {
 }
 .inventory {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2px;
-  padding: 3px;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1px;
+  padding: 2px;
   background: linear-gradient(180deg, #b88458, var(--k-wood-deep));
   border: 2.5px solid var(--k-frame);
   border-radius: 10px;
   box-shadow: inset 0 0 0 1px var(--k-wood-light), 0 2px 0 rgba(106,74,50,.28);
-  max-height: 148px;
+  max-height: 132px;
 }
 .slot {
   aspect-ratio: 1;
-  max-height: 40px;
-  border-radius: 6px;
-  border: 1.5px solid var(--k-wood-light);
+  max-height: 34px;
+  border-radius: 4px;
+  border: 1px solid var(--k-wood-light);
   background: var(--k-parchment);
   display: flex;
   flex-direction: column;
@@ -624,20 +624,16 @@ button {
   border-color: rgba(226, 195, 154, .55);
 }
 .slot img {
-  width: 48%;
-  height: 48%;
-  max-width: 18px;
-  max-height: 18px;
+  width: 72%;
+  height: 72%;
+  max-width: 22px;
+  max-height: 22px;
   object-fit: contain;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
 .slot span {
-  font-size: 6px;
-  font-weight: 700;
-  color: var(--k-ink);
-  line-height: 1;
-  margin-top: 0;
+  display: none; /* 密排：只顯示圖示 */
 }
 .slot.filled:active { transform: scale(.94); }
 .slot.assigned {
@@ -1185,11 +1181,11 @@ button {
   gap: 8px;
 }
 .lily-mood {
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
-  border-radius: 8px;
-  border: 2px solid var(--k-wood);
+  border-radius: 6px;
+  border: 1.5px solid var(--k-wood);
   object-fit: cover;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
@@ -1281,7 +1277,7 @@ button {
 /* round4: weather + frames (subtle) + trap marker */
 #weather-ico { width: 14px; height: 14px; }
 .dialogue.framed {
-  background-image: url('assets/ui/bubble-speech.png?v=1794067600');
+  background-image: url('assets/ui/bubble-speech.png?v=1794067700');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1416,12 +1412,12 @@ button {
   cursor: url('assets/ui/cursor-talk.png?v=1794058800') 4 0, pointer;
 }
 .slot.empty {
-  background-image: url('assets/ui/inv-slot.png?v=1794067600');
+  background-image: url('assets/ui/inv-slot.png?v=1794067700');
   background-size: cover;
   background-position: center;
 }
 .slot.locked {
-  background-image: url('assets/ui/inv-lock.png?v=1794067600');
+  background-image: url('assets/ui/inv-lock.png?v=1794067700');
   background-size: cover;
   background-position: center;
   opacity: .85;
@@ -2777,3 +2773,116 @@ button {
 /* 對話區保清晰 */
 .dialogue-panel { z-index: 4; }
 .quest-row { z-index: 3; }
+
+
+/* —— cleanup2：對話單一可讀＋道具密排 —— */
+.dialogue-panel {
+  z-index: 5;
+  overflow: hidden;
+  padding: 7px 34px 7px 8px;
+  gap: 0;
+}
+.dialogue-panel > .act.info.tiny {
+  z-index: 6;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+}
+.dialogue,
+#dialogue {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  min-height: 28px;
+  background: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.dialogue.dialog-wood,
+.dialogue.bubble-decor,
+.dialogue.framed,
+.dialogue.bubble-speech,
+.dialogue.bubble-thought,
+.dialogue.bubble-shout {
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.dialogue .dialog-corner,
+.dialogue .dialog-tail,
+.npc-receptionist-chip {
+  display: none !important;
+}
+.dialogue-main {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+.dialogue-name,
+.dialogue-name.nameplate {
+  background: none !important;
+  background-image: none !important;
+  padding: 0 !important;
+  min-width: 0 !important;
+  color: var(--k-wood-deep) !important;
+  text-shadow: none !important;
+  font-size: 11px;
+  font-weight: 800;
+  margin-bottom: 2px;
+  display: block;
+}
+.dialogue-text {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--k-ink);
+  position: relative;
+  z-index: 1;
+}
+.emoji-bubble {
+  position: absolute !important;
+  right: 30px;
+  top: 2px;
+  width: 16px !important;
+  height: 16px !important;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+}
+.emoji-bubble.show {
+  opacity: 0.9;
+  transform: translateY(-2px) scale(1);
+}
+.quest-toolbar {
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 2px 0 0;
+  max-height: 28px;
+  overflow: hidden;
+}
+.quest-toolbar .btn-util span { display: none; }
+.quest-toolbar .btn-util {
+  padding: 2px 5px;
+  min-width: 0;
+}
+.quest-toolbar .btn-util img {
+  width: 16px;
+  height: 16px;
+}
+.inv-filters { display: none !important; }
+.inventory .slot.inv-chrome {
+  background-image: none;
+}
+.inventory .slot.is-new::after {
+  width: 10px;
+  height: 10px;
+  top: 0;
+  right: 0;
+}
