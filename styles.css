@@ -168,8 +168,8 @@ button {
   padding: 4px 10px 0;
   flex: 1 1 auto;
   height: auto;
-  max-height: 42vh; /* 放大公會窗，莉莉面清楚 */
-  min-height: 220px;
+  max-height: 46vh; /* 放大公會窗：大台＋莉莉入鏡 */
+  min-height: 240px;
 }
 
 .side-rail {
@@ -264,11 +264,12 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  /* 大 U 木台喺下半：略偏下，確保櫃台入鏡清晰 */
+  object-position: center 58%;
   image-rendering: auto;
-  filter: saturate(1.05) brightness(1.02);
+  filter: saturate(1.04) brightness(1.02);
 }
-/* 莉莉：純半身 + 細工作台分層疊（透明底；唔用背景大木台） */
+/* 莉莉半身＋檯面文具層（window-bg 已含大 U 台） */
 .party-stage.lily-bg {
   position: absolute;
   left: 0;
@@ -277,17 +278,18 @@ button {
   bottom: 0;
   pointer-events: none;
   z-index: 1;
+  overflow: hidden;
 }
 .stage-lily {
   position: absolute;
   left: 50%;
-  /* 半身（腰／胸口以上）完整入鏡；坐喺台後、正面；唔頂滿窗口 */
-  bottom: 14%;
-  transform: translateX(-50%) scale(1.0);
+  /* 半身女僕喺大台後：腰線對齊櫃台頂，唔頂滿、唔浮空 */
+  bottom: 26%;
+  transform: translateX(-50%) scale(0.96);
   transform-origin: center bottom;
-  height: 78%;
+  height: 70%;
   width: auto;
-  max-width: 78%;
+  max-width: 72%;
   object-fit: contain;
   object-position: center bottom;
   image-rendering: pixelated;
@@ -295,21 +297,21 @@ button {
   filter: drop-shadow(0 2px 6px rgba(106,74,50,.22));
   z-index: 1;
 }
-/* 細台：人前下方可見（羊皮紙／墨水）；對齊坐姿 */
+/* 細寫字台：asset 含枱腳；window-bg 已有大 U 台——裁走下半枱腳，只留檯面文具疊喺大台上，避免細台亂疊 */
 .stage-desk {
   position: absolute;
   left: 50%;
-  bottom: 4%;
-  transform: translateX(-50%) scale(1.05);
+  bottom: 22%;
+  transform: translateX(-50%);
   transform-origin: center bottom;
-  width: 58%;
-  max-width: 200px;
-  height: auto;
-  object-fit: contain;
-  object-position: center bottom;
+  width: 78%;
+  max-width: 260px;
+  height: 28%;
+  object-fit: cover;
+  object-position: center 8%; /* 露出墨水／筆／書／卷軸；藏枱腳 */
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-  filter: drop-shadow(0 2px 4px rgba(60,40,28,.35));
+  filter: drop-shadow(0 2px 4px rgba(60,40,28,.3));
   z-index: 2;
   pointer-events: none;
 }
@@ -1277,7 +1279,7 @@ button {
 /* round4: weather + frames (subtle) + trap marker */
 #weather-ico { width: 14px; height: 14px; }
 .dialogue.framed {
-  background-image: url('assets/ui/bubble-speech.png?v=1794067800');
+  background-image: url('assets/ui/bubble-speech.png?v=1794067900');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1412,12 +1414,12 @@ button {
   cursor: url('assets/ui/cursor-talk.png?v=1794058800') 4 0, pointer;
 }
 .slot.empty {
-  background-image: url('assets/ui/inv-slot.png?v=1794067800');
+  background-image: url('assets/ui/inv-slot.png?v=1794067900');
   background-size: cover;
   background-position: center;
 }
 .slot.locked {
-  background-image: url('assets/ui/inv-lock.png?v=1794067800');
+  background-image: url('assets/ui/inv-lock.png?v=1794067900');
   background-size: cover;
   background-position: center;
   opacity: .85;
