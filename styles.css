@@ -1279,7 +1279,7 @@ button {
 /* round4: weather + frames (subtle) + trap marker */
 #weather-ico { width: 14px; height: 14px; }
 .dialogue.framed {
-  background-image: url('assets/ui/bubble-speech.png?v=1794068300');
+  background-image: url('assets/ui/bubble-speech.png?v=1794068400');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1414,12 +1414,12 @@ button {
   cursor: url('assets/ui/cursor-talk.png?v=1794058800') 4 0, pointer;
 }
 .slot.empty {
-  background-image: url('assets/ui/inv-slot.png?v=1794068300');
+  background-image: url('assets/ui/inv-slot.png?v=1794068400');
   background-size: cover;
   background-position: center;
 }
 .slot.locked {
-  background-image: url('assets/ui/inv-lock.png?v=1794068300');
+  background-image: url('assets/ui/inv-lock.png?v=1794068400');
   background-size: cover;
   background-position: center;
   opacity: .85;
@@ -3289,4 +3289,55 @@ button {
 .lane-actor.monster img[src*="q-monster-"] {
   image-rendering: auto;
   image-rendering: -webkit-optimize-contrast;
+}
+
+
+/* —— expand5：信物改派任務／三條忙碌跑道彈性高度 —— */
+.bond-gift-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+.bond-assign-quest {
+  display: block;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .03em;
+  color: #5a3a22;
+  background: linear-gradient(180deg, #fff1d6, #f0d4a4);
+  border: 2px solid var(--k-gold);
+  border-radius: 8px;
+  padding: 7px 8px;
+  cursor: pointer;
+}
+.bond-quest-list {
+  margin: 6px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.bond-quest-title {
+  margin: 4px 0 2px !important;
+  font-size: 11px !important;
+}
+#app.dungeon-focus.lanes-3 .dungeon-wrap {
+  min-height: 248px;
+  max-height: 54vh;
+}
+#app.dungeon-focus.lanes-3 .dungeon-lanes { min-height: 216px; }
+#app.dungeon-focus.lanes-3 .dungeon-lane.busy {
+  flex: 1.1 1 0;
+  min-height: 58px;
+}
+#app.dungeon-focus.lanes-3 .lane-actor {
+  width: 46px;
+  height: 54px;
+}
+@media (max-height: 780px) {
+  #app.dungeon-focus.lanes-3 .dungeon-wrap { min-height: 200px; max-height: 48vh; }
+  #app.dungeon-focus.lanes-3 .dungeon-lanes { min-height: 170px; }
+  #app.dungeon-focus.lanes-3 .dungeon-lane.busy { min-height: 50px; }
+  #app.dungeon-focus.lanes-3 .lane-actor { width: 40px; height: 48px; }
 }

@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="theme-color" content="#C48A5A" />
 <title>冒險者公會 · 開羅風 v2</title>
-<link rel="stylesheet" href="styles.css?v=1794068300" />
+<link rel="stylesheet" href="styles.css?v=1794068400" />
 </head>
 <body>
   <div id="app" class="phone-frame" data-theme="kairo-v2">
@@ -15,17 +15,17 @@
     <!-- 頂部：日曆／金幣聲譽 -->
     <header class="top-bar">
             <button type="button" class="soft-pill day" id="btn-day" title="日曆">
-        <img class="pill-ico" src="assets/ui/day-badge.png?v=1794068300" alt="" aria-hidden="true" />
+        <img class="pill-ico" src="assets/ui/day-badge.png?v=1794068400" alt="" aria-hidden="true" />
         <span class="pill-stack">
           <strong id="day-label">第9日 星期二</strong>
-          <small><img class="inline-ico" id="weather-ico" src="assets/ui/weather-sunny.png?v=1794068300" alt="" /><span id="weather-label">晴</span> · <img class="inline-ico" id="tod-ico" src="assets/ui/time-noon.png?v=1794068300" alt="" /><span id="tod-label">正午</span> · <img class="inline-ico" id="season-ico" src="assets/ui/season-spring.png?v=1794068300" alt="" /><span id="season-label">春</span> · <img class="inline-ico" id="rent-ico" src="assets/ui/rent-wood.png?v=1794068300" alt=""/><span id="rent-label">賃金</span>剩 <em id="wage-val">5</em> 日</small>
+          <small><img class="inline-ico" id="weather-ico" src="assets/ui/weather-sunny.png?v=1794068400" alt="" /><span id="weather-label">晴</span> · <img class="inline-ico" id="tod-ico" src="assets/ui/time-noon.png?v=1794068400" alt="" /><span id="tod-label">正午</span> · <img class="inline-ico" id="season-ico" src="assets/ui/season-spring.png?v=1794068400" alt="" /><span id="season-label">春</span> · <img class="inline-ico" id="rent-ico" src="assets/ui/rent-wood.png?v=1794068400" alt=""/><span id="rent-label">賃金</span>剩 <em id="wage-val">5</em> 日</small>
         </span>
       </button>
       <button type="button" class="soft-pill economy" id="btn-economy" title="金幣與聲譽">
-        <img class="pill-ico" src="assets/icons/coin-silver.png?v=1794068300" alt="" aria-hidden="true" />
+        <img class="pill-ico" src="assets/icons/coin-silver.png?v=1794068400" alt="" aria-hidden="true" />
         <span class="pill-stack">
           <strong class="gold-line">金幣 <b id="gold-val" class="pix-num" data-pix="87">87</b></strong>
-          <small><img class="inline-ico" id="rank-ico" src="assets/badges/rank-copper.png?v=1794068300" alt="" /><img class="inline-ico" id="rep-trend" src="assets/ui/reputation-up.png?v=1794068300" alt="" /><img class="inline-ico" src="assets/ui/fame-star.png?v=1794068300" alt="" />聲譽 <b id="rep-val">中</b></small>
+          <small><img class="inline-ico" id="rank-ico" src="assets/badges/rank-copper.png?v=1794068400" alt="" /><img class="inline-ico" id="rep-trend" src="assets/ui/reputation-up.png?v=1794068400" alt="" /><img class="inline-ico" src="assets/ui/fame-star.png?v=1794068400" alt="" />聲譽 <b id="rep-val">中</b></small>
         </span>
       </button>
     </header>
@@ -33,8 +33,8 @@
     <!-- 左前衛／中窗口（莉莉）／右後衛 —— 已縮小騰位 -->
     <section class="window-row">
       <aside class="side-rail front" aria-label="前衛">
-        <div class="rail-tag">前衛 <img class="pos-rail" src="assets/party/pos-front.png?v=1794068300" alt=""/></div>
-        <button type="button" class="btn-party-swap" id="btn-party-swap" title="交換前後衛位置"><img src="assets/party/swap.png?v=1794068300" alt="交換"/></button>
+        <div class="rail-tag">前衛 <img class="pos-rail" src="assets/party/pos-front.png?v=1794068400" alt=""/></div>
+        <button type="button" class="btn-party-swap" id="btn-party-swap" title="交換前後衛位置"><img src="assets/party/swap.png?v=1794068400" alt="交換"/></button>
         <div class="party-strip" id="party-strip-front">
           <button type="button" class="head-slot active" data-line="front" data-id="sword" data-job="劍士" title="見習冒險者 · 劍士">
             <img src="assets/heads/front-sword.png" alt="劍士" />
@@ -54,69 +54,69 @@
       <div class="service-window">
         <div class="window-glass">
           <!-- 大木台背景 window-bg-kairo-with-desk；半身 npc-lily + 細台 lily-desk 疊層 -->
-          <img class="window-bg" src="assets/window-bg-kairo-with-desk.jpg?v=1794068300" alt="" />
+          <img class="window-bg" src="assets/window-bg-kairo-with-desk.jpg?v=1794068400" alt="" />
           <div class="window-props" aria-hidden="true">
-            <img class="prop prop-pet" id="pet-follow" src="assets/pets/pet-cat.png?v=1794068300" alt="" />
-            <img class="prop prop-guest" id="guest-face" src="assets/ui/guest-happy.png?v=1794068300" alt="" />
-            <img class="prop prop-heart" id="guest-heart" src="assets/ui/heart-half.png?v=1794068300" alt="" />
-            <img class="prop prop-lantern" src="assets/props/lantern.png?v=1794068300" alt="" />
-            <img class="prop prop-fest-lantern" src="assets/ui/festival-lantern.png?v=1794068300" alt="" />
-            <img class="prop prop-fest-mask" src="assets/ui/festival-mask.png?v=1794068300" alt="" />
-            <img class="prop prop-plant prop-always" src="assets/props/prop-plant-pot.png?v=1794068300" alt="" />
-            <img class="prop prop-shelf" src="assets/props/prop-bookshelf.png?v=1794068300" alt="" />
-            <img class="prop prop-board" src="assets/props/quest-board.png?v=1794068300" alt="" />
+            <img class="prop prop-pet" id="pet-follow" src="assets/pets/pet-cat.png?v=1794068400" alt="" />
+            <img class="prop prop-guest" id="guest-face" src="assets/ui/guest-happy.png?v=1794068400" alt="" />
+            <img class="prop prop-heart" id="guest-heart" src="assets/ui/heart-half.png?v=1794068400" alt="" />
+            <img class="prop prop-lantern" src="assets/props/lantern.png?v=1794068400" alt="" />
+            <img class="prop prop-fest-lantern" src="assets/ui/festival-lantern.png?v=1794068400" alt="" />
+            <img class="prop prop-fest-mask" src="assets/ui/festival-mask.png?v=1794068400" alt="" />
+            <img class="prop prop-plant prop-always" src="assets/props/prop-plant-pot.png?v=1794068400" alt="" />
+            <img class="prop prop-shelf" src="assets/props/prop-bookshelf.png?v=1794068400" alt="" />
+            <img class="prop prop-board" src="assets/props/quest-board.png?v=1794068400" alt="" />
 
-            <img class="prop prop-tea prop-always" src="assets/props/tea-cup.png?v=1794068300" alt="" />
-            <img class="prop prop-cookie" src="assets/props/cookie.png?v=1794068300" alt="" />
-            <img class="prop prop-bell prop-always" src="assets/props/prop-bell.png?v=1794068300" alt="" />
-            <img class="prop prop-quillstand" src="assets/props/quill-stand.png?v=1794068300" alt="" />
+            <img class="prop prop-tea prop-always" src="assets/props/tea-cup.png?v=1794068400" alt="" />
+            <img class="prop prop-cookie" src="assets/props/cookie.png?v=1794068400" alt="" />
+            <img class="prop prop-bell prop-always" src="assets/props/prop-bell.png?v=1794068400" alt="" />
+            <img class="prop prop-quillstand" src="assets/props/quill-stand.png?v=1794068400" alt="" />
 
-            <img class="prop prop-sofa" src="assets/props/sofa.png?v=1794068300" alt="" />
-            <img class="prop prop-rug" src="assets/props/rug.png?v=1794068300" alt="" />
-            <img class="prop prop-flower" src="assets/props/window-flower.png?v=1794068300" alt="" />
-            <img class="prop prop-notice" src="assets/props/prop-notice-board.png?v=1794068300" alt="" />
-            <img class="prop prop-balloon" src="assets/icons/balloon.png?v=1794068300" alt="" />
-            <img class="prop prop-gift-box" src="assets/ui/gift-box.png?v=1794068300" alt="" />
-            <img class="prop prop-gift-flower" src="assets/ui/gift-flower.png?v=1794068300" alt="" />
-            <img class="prop prop-gift-letter" src="assets/ui/gift-letter.png?v=1794068300" alt="" />
-            <img class="prop prop-campfire" src="assets/props/campfire.png?v=1794068300" alt="" />
-            <img class="prop prop-campfire-lit" src="assets/props/campfire-lit.png?v=1794068300" alt="" />
-            <img class="prop prop-tent-rest" src="assets/props/tent-rest.png?v=1794068300" alt="" />
-            <img class="prop prop-bedroll" src="assets/props/bedroll.png?v=1794068300" alt="" />
-            <img class="prop prop-curtain" src="assets/props/prop-curtain.png?v=1794068300" alt="" />
-            <img class="prop prop-spotlight" src="assets/props/prop-spotlight.png?v=1794068300" alt="" />
-            <img class="prop prop-stage-plank" src="assets/props/prop-stage-plank.png?v=1794068300" alt="" />
-            <img class="prop prop-sign-dock" src="assets/props/sign-dock.png?v=1794068300" alt="" />
-            <img class="prop prop-sign-stable" src="assets/props/sign-stable.png?v=1794068300" alt="" />
-            <img class="prop prop-sign-balloon" src="assets/props/sign-balloon-pad.png?v=1794068300" alt="" />
-            <img class="prop prop-dummy" src="assets/ui/train-dummy.png?v=1794068300" alt="" />
-            <img class="prop prop-train-spar" src="assets/ui/train-spar.png?v=1794068300" alt="" />
-            <img class="prop prop-level-spark" src="assets/ui/level-spark.png?v=1794068300" alt="" />
-            <img class="prop prop-exp-orb" src="assets/ui/exp-orb.png?v=1794068300" alt="" />
-            <img class="prop prop-scaffold" src="assets/props/scaffold.png?v=1794068300" alt="" />
-            <img class="prop prop-bed" src="assets/props/bed.png?v=1794068300" alt="" />
-            <img class="prop prop-bathtub" src="assets/props/bathtub.png?v=1794068300" alt="" />
-            <img class="prop prop-anvil" src="assets/icons/anvil.png?v=1794068300" alt="" />
-            <img class="prop prop-craft-anvil" src="assets/props/craft-anvil.png?v=1794068300" alt="" />
-            <img class="prop prop-craft-alchemy" src="assets/props/craft-alchemy.png?v=1794068300" alt="" />
-            <img class="prop prop-craft-loom" src="assets/props/craft-loom.png?v=1794068300" alt="" />
-            <img class="prop prop-fac-library" src="assets/props/facility-library.png?v=1794068300" alt="" />
-            <img class="prop prop-fac-training" src="assets/props/facility-training.png?v=1794068300" alt="" />
-            <img class="prop prop-fac-bath" src="assets/props/facility-bath.png?v=1794068300" alt="" />
-            <img class="prop prop-inkwell" src="assets/props/prop-inkwell.png?v=1794068300" alt="" />
-            <img class="prop prop-candle" src="assets/props/prop-candle.png?v=1794068300" alt="" />
-            <img class="prop prop-ledger" src="assets/props/prop-ledger.png?v=1794068300" alt="" />
-            <img class="prop prop-cookpot" src="assets/icons/cookpot.png?v=1794068300" alt="" />
+            <img class="prop prop-sofa" src="assets/props/sofa.png?v=1794068400" alt="" />
+            <img class="prop prop-rug" src="assets/props/rug.png?v=1794068400" alt="" />
+            <img class="prop prop-flower" src="assets/props/window-flower.png?v=1794068400" alt="" />
+            <img class="prop prop-notice" src="assets/props/prop-notice-board.png?v=1794068400" alt="" />
+            <img class="prop prop-balloon" src="assets/icons/balloon.png?v=1794068400" alt="" />
+            <img class="prop prop-gift-box" src="assets/ui/gift-box.png?v=1794068400" alt="" />
+            <img class="prop prop-gift-flower" src="assets/ui/gift-flower.png?v=1794068400" alt="" />
+            <img class="prop prop-gift-letter" src="assets/ui/gift-letter.png?v=1794068400" alt="" />
+            <img class="prop prop-campfire" src="assets/props/campfire.png?v=1794068400" alt="" />
+            <img class="prop prop-campfire-lit" src="assets/props/campfire-lit.png?v=1794068400" alt="" />
+            <img class="prop prop-tent-rest" src="assets/props/tent-rest.png?v=1794068400" alt="" />
+            <img class="prop prop-bedroll" src="assets/props/bedroll.png?v=1794068400" alt="" />
+            <img class="prop prop-curtain" src="assets/props/prop-curtain.png?v=1794068400" alt="" />
+            <img class="prop prop-spotlight" src="assets/props/prop-spotlight.png?v=1794068400" alt="" />
+            <img class="prop prop-stage-plank" src="assets/props/prop-stage-plank.png?v=1794068400" alt="" />
+            <img class="prop prop-sign-dock" src="assets/props/sign-dock.png?v=1794068400" alt="" />
+            <img class="prop prop-sign-stable" src="assets/props/sign-stable.png?v=1794068400" alt="" />
+            <img class="prop prop-sign-balloon" src="assets/props/sign-balloon-pad.png?v=1794068400" alt="" />
+            <img class="prop prop-dummy" src="assets/ui/train-dummy.png?v=1794068400" alt="" />
+            <img class="prop prop-train-spar" src="assets/ui/train-spar.png?v=1794068400" alt="" />
+            <img class="prop prop-level-spark" src="assets/ui/level-spark.png?v=1794068400" alt="" />
+            <img class="prop prop-exp-orb" src="assets/ui/exp-orb.png?v=1794068400" alt="" />
+            <img class="prop prop-scaffold" src="assets/props/scaffold.png?v=1794068400" alt="" />
+            <img class="prop prop-bed" src="assets/props/bed.png?v=1794068400" alt="" />
+            <img class="prop prop-bathtub" src="assets/props/bathtub.png?v=1794068400" alt="" />
+            <img class="prop prop-anvil" src="assets/icons/anvil.png?v=1794068400" alt="" />
+            <img class="prop prop-craft-anvil" src="assets/props/craft-anvil.png?v=1794068400" alt="" />
+            <img class="prop prop-craft-alchemy" src="assets/props/craft-alchemy.png?v=1794068400" alt="" />
+            <img class="prop prop-craft-loom" src="assets/props/craft-loom.png?v=1794068400" alt="" />
+            <img class="prop prop-fac-library" src="assets/props/facility-library.png?v=1794068400" alt="" />
+            <img class="prop prop-fac-training" src="assets/props/facility-training.png?v=1794068400" alt="" />
+            <img class="prop prop-fac-bath" src="assets/props/facility-bath.png?v=1794068400" alt="" />
+            <img class="prop prop-inkwell" src="assets/props/prop-inkwell.png?v=1794068400" alt="" />
+            <img class="prop prop-candle" src="assets/props/prop-candle.png?v=1794068400" alt="" />
+            <img class="prop prop-ledger" src="assets/props/prop-ledger.png?v=1794068400" alt="" />
+            <img class="prop prop-cookpot" src="assets/icons/cookpot.png?v=1794068400" alt="" />
           </div>
           <div class="party-stage lily-bg" aria-label="公會娘莉莉（正面半身＋細台）">
-            <img class="stage-lily" src="assets/npc-lily.png?v=1794068300" alt="公會娘 莉莉" />
-            <img class="stage-desk" src="assets/lily-desk.png?v=1794068300" alt="" aria-hidden="true" />
+            <img class="stage-lily" src="assets/npc-lily.png?v=1794068400" alt="公會娘 莉莉" />
+            <img class="stage-desk" src="assets/lily-desk.png?v=1794068400" alt="" aria-hidden="true" />
           </div>
         </div>
       </div>
 
       <aside class="side-rail back" aria-label="後衛">
-        <div class="rail-tag">後衛 <img class="pos-rail" src="assets/party/pos-back.png?v=1794068300" alt=""/></div>
+        <div class="rail-tag">後衛 <img class="pos-rail" src="assets/party/pos-back.png?v=1794068400" alt=""/></div>
         <div class="party-strip" id="party-strip-back">
           <button type="button" class="head-slot active" data-line="back" data-id="mage" data-job="法師" title="見習冒險者 · 法師">
             <img src="assets/heads/back-mage.png" alt="法師" />
@@ -141,24 +141,24 @@
       <div class="dialogue-panel">
         <div class="dialogue" id="dialogue">
           <img class="emoji-bubble" id="emoji-bubble" alt="" hidden />
-          <img class="lily-mood" id="lily-mood" src="assets/heads/lily-mood-smile.png?v=1794068300" alt="" />
+          <img class="lily-mood" id="lily-mood" src="assets/heads/lily-mood-smile.png?v=1794068400" alt="" />
           <div class="dialogue-main">
             <div class="dialogue-name nameplate" id="dialogue-name">莉莉</div>
             <div class="dialogue-text" id="dialogue-text">（審批緊文件）有咩可以幫你？</div>
           </div>
         </div>
-        <button type="button" class="act info tiny" id="btn-info" title="莉莉資料"><img src="assets/ui/info-i.png?v=1794068300" alt="資料"/></button>
+        <button type="button" class="act info tiny" id="btn-info" title="莉莉資料"><img src="assets/ui/info-i.png?v=1794068400" alt="資料"/></button>
       </div>
 
       <div class="quest-toolbar">
-        <button type="button" class="btn-util" id="btn-pet" title="寵物"><img id="pet-toolbar-ico" src="assets/pets/pet-cat.png?v=1794068300" alt=""/><span>寵物</span></button>
-        <button type="button" class="btn-util" id="btn-ach" title="成就"><img src="assets/achievements/ach-guild.png?v=1794068300" alt=""/><span>成就</span></button>
-        <button type="button" class="btn-util" id="btn-shop" title="商店"><img src="assets/ui/shop-tag.png?v=1794068300" alt=""/><span>商店</span><img class="notif" src="assets/ui/notif-dot.png?v=1794068300" alt=""/></button>
-        <button type="button" class="btn-util" id="btn-mail" title="信箱"><img id="mail-ico" src="assets/ui/mail-envelope.png?v=1794068300" alt=""/><span>信箱</span><img class="notif" id="mail-notif" src="assets/ui/notif-dot.png?v=1794068300" alt=""/></button>
-        <button type="button" class="btn-util" id="btn-settings" title="設定"><img src="assets/ui/settings-gear.png?v=1794068300" alt=""/><span>設定</span></button>
-        <button type="button" class="btn-util" id="btn-train" title="訓練"><img src="assets/icons/icon-dumbbell.png?v=1794068300" alt=""/><span>訓練</span></button>
-        <button type="button" class="btn-util" id="btn-craft" title="工藝"><img src="assets/icons/anvil.png?v=1794068300" alt=""/><span>工藝</span></button>
-        <button type="button" class="btn-util" id="btn-recruit" title="招募"><img src="assets/heads/npc-party-recruiter.png?v=1794068300" alt=""/><span>招募</span></button>
+        <button type="button" class="btn-util" id="btn-pet" title="寵物"><img id="pet-toolbar-ico" src="assets/pets/pet-cat.png?v=1794068400" alt=""/><span>寵物</span></button>
+        <button type="button" class="btn-util" id="btn-ach" title="成就"><img src="assets/achievements/ach-guild.png?v=1794068400" alt=""/><span>成就</span></button>
+        <button type="button" class="btn-util" id="btn-shop" title="商店"><img src="assets/ui/shop-tag.png?v=1794068400" alt=""/><span>商店</span><img class="notif" src="assets/ui/notif-dot.png?v=1794068400" alt=""/></button>
+        <button type="button" class="btn-util" id="btn-mail" title="信箱"><img id="mail-ico" src="assets/ui/mail-envelope.png?v=1794068400" alt=""/><span>信箱</span><img class="notif" id="mail-notif" src="assets/ui/notif-dot.png?v=1794068400" alt=""/></button>
+        <button type="button" class="btn-util" id="btn-settings" title="設定"><img src="assets/ui/settings-gear.png?v=1794068400" alt=""/><span>設定</span></button>
+        <button type="button" class="btn-util" id="btn-train" title="訓練"><img src="assets/icons/icon-dumbbell.png?v=1794068400" alt=""/><span>訓練</span></button>
+        <button type="button" class="btn-util" id="btn-craft" title="工藝"><img src="assets/icons/anvil.png?v=1794068400" alt=""/><span>工藝</span></button>
+        <button type="button" class="btn-util" id="btn-recruit" title="招募"><img src="assets/heads/npc-party-recruiter.png?v=1794068400" alt=""/><span>招募</span></button>
 
         <button type="button" class="btn-refresh" id="btn-refresh-quests" title="刷新已完成委託">換一批</button>
       </div>
@@ -174,124 +174,122 @@
         <button type="button" class="btn-auto" id="btn-auto-items" title="自動選擇道具">自動選擇</button>
       </div>
             <div class="inventory" id="inventory">
-        <button type="button" class="slot filled" data-item="生命藥水" data-bonus="8" data-icon="potion"><img src="assets/icons/potion.png?v=1794068300" alt=""><span>藥水</span></button>
-        <button type="button" class="slot filled" data-item="地下城地圖" data-bonus="10" data-icon="map"><img src="assets/icons/map.png?v=1794068300" alt=""><span>地圖</span></button>
-        <button type="button" class="slot filled" data-item="長劍" data-bonus="14" data-icon="equip-sword"><img src="assets/icons/eq-sword-wood.png?v=1794068300" alt=""><span>長劍</span></button>
-        <button type="button" class="slot filled" data-item="木盾" data-bonus="9" data-icon="equip-shield"><img src="assets/icons/eq-shield-round.png?v=1794068300" alt=""><span>木盾</span></button>
-        <button type="button" class="slot filled" data-item="鎧甲" data-bonus="12" data-icon="armor"><img src="assets/icons/armor.png?v=1794068300" alt=""><span>鎧甲</span></button>
-        <button type="button" class="slot filled" data-item="皮靴" data-bonus="7" data-icon="boots"><img src="assets/icons/boots.png?v=1794068300" alt=""><span>皮靴</span></button>
-        <button type="button" class="slot filled" data-item="頭盔" data-bonus="10" data-icon="helmet"><img src="assets/icons/helmet.png?v=1794068300" alt=""><span>頭盔</span></button>
-        <button type="button" class="slot filled" data-item="火把" data-bonus="6" data-icon="torch"><img src="assets/icons/torch.png?v=1794068300" alt=""><span>火把</span></button>
-        <button type="button" class="slot filled" data-item="繩索" data-bonus="8" data-icon="rope"><img src="assets/icons/rope.png?v=1794068300" alt=""><span>繩索</span></button>
-        <button type="button" class="slot filled" data-item="炸彈" data-bonus="15" data-icon="bomb"><img src="assets/icons/bomb.png?v=1794068300" alt=""><span>炸彈</span></button>
-        <button type="button" class="slot filled" data-item="鎬子" data-bonus="9" data-icon="pickaxe"><img src="assets/icons/pickaxe.png?v=1794068300" alt=""><span>鎬子</span></button>
-        <button type="button" class="slot filled" data-item="解毒劑" data-bonus="11" data-icon="antidote"><img src="assets/icons/antidote.png?v=1794068300" alt=""><span>解毒</span></button>
-        <button type="button" class="slot filled" data-item="委託書" data-bonus="5" data-icon="contract"><img src="assets/icons/contract.png?v=1794068300" alt=""><span>委託</span></button>
-        <button type="button" class="slot filled is-new" data-item="功勳章" data-new="1" data-bonus="8" data-icon="medal"><img src="assets/icons/medal.png?v=1794068300" alt=""><span>功勳</span></button>
-        <button type="button" class="slot filled" data-item="推薦信" data-bonus="6" data-icon="letter"><img src="assets/icons/letter.png?v=1794068300" alt=""><span>書信</span></button>
-        <button type="button" class="slot filled food" data-item="燉菜" data-bonus="9" data-buff="rate" data-icon="stew"><img src="assets/icons/food-stew.png?v=1794068300" alt=""><span>燉菜</span></button>
-        <button type="button" class="slot filled food" data-item="蛋糕" data-bonus="7" data-buff="rate" data-icon="cake"><img src="assets/icons/cake.png?v=1794068300" alt=""><span>蛋糕</span></button>
-        <button type="button" class="slot filled food" data-item="烤魚" data-bonus="8" data-buff="heal" data-icon="fish-dish"><img src="assets/icons/fish-dish.png?v=1794068300" alt=""><span>烤魚</span></button>
-        <button type="button" class="slot filled food" data-item="蘋果" data-bonus="5" data-buff="heal" data-icon="apple"><img src="assets/icons/apple.png?v=1794068300" alt=""><span>蘋果</span></button>
-        <button type="button" class="slot filled food" data-item="蜂蜜" data-bonus="6" data-buff="rate" data-icon="honey"><img src="assets/icons/icon-honey.png?v=1794068300" alt=""><span>蜂蜜</span></button>
-        <button type="button" class="slot filled food" data-item="鮮奶" data-bonus="5" data-buff="heal" data-icon="milk"><img src="assets/icons/milk.png?v=1794068300" alt=""><span>鮮奶</span></button>
-        <button type="button" class="slot filled is-new" data-item="慶祝禮物" data-new="1" data-bonus="10" data-icon="gift"><img src="assets/icons/gift-box.png?v=1794068300" alt=""><span>禮物</span></button>
-        <button type="button" class="slot filled" data-item="慶祝氣球" data-bonus="4" data-icon="balloon"><img src="assets/icons/balloon.png?v=1794068300" alt=""><span>氣球</span></button>
-        <button type="button" class="slot filled" data-item="啞鈴" data-bonus="6" data-icon="dumbbell"><img src="assets/icons/icon-dumbbell.png?v=1794068300" alt=""><span>啞鈴</span></button>
-        <button type="button" class="slot filled" data-item="準星靶" data-bonus="7" data-icon="target"><img src="assets/icons/target.png?v=1794068300" alt=""><span>靶子</span></button>
-        <button type="button" class="slot filled is-new" data-item="鐵鎚" data-new="1" data-bonus="8" data-icon="hammer"><img src="assets/icons/hammer.png?v=1794068300" alt=""><span>鐵鎚</span></button>
-        <button type="button" class="slot filled" data-item="鐵釘" data-bonus="5" data-icon="nails"><img src="assets/icons/nails.png?v=1794068300" alt=""><span>鐵釘</span></button>
-        <button type="button" class="slot filled" data-item="設計圖" data-bonus="9" data-icon="blueprint"><img src="assets/icons/icon-blueprint.png?v=1794068300" alt=""><span>藍圖</span></button>
-        <button type="button" class="slot filled is-new" data-item="煙霧彈" data-new="1" data-bonus="12" data-icon="bomb-smoke"><img src="assets/icons/bomb-smoke.png?v=1794068300" alt=""><span>煙彈</span></button>
-        <button type="button" class="slot filled" data-item="魔鏡" data-bonus="10" data-icon="mirror"><img src="assets/icons/mirror.png?v=1794068300" alt=""><span>魔鏡</span></button>
-        <button type="button" class="slot filled" data-item="鳳凰羽" data-bonus="11" data-icon="feather"><img src="assets/icons/icon-feather.png?v=1794068300" alt=""><span>羽</span></button>
-        <button type="button" class="slot filled" data-item="水晶碎片" data-bonus="13" data-icon="crystal-shard"><img src="assets/icons/crystal-shard.png?v=1794068300" alt=""><span>晶片</span></button>
-        <button type="button" class="slot filled is-new" data-item="指南針" data-new="1" data-bonus="8" data-icon="compass"><img src="assets/icons/icon-compass.png?v=1794068300" alt=""><span>羅盤</span></button>
-        <button type="button" class="slot filled" data-item="軟枕" data-bonus="4" data-icon="pillow"><img src="assets/icons/pillow.png?v=1794068300" alt=""><span>軟枕</span></button>
-        <button type="button" class="slot filled" data-item="香皂" data-bonus="3" data-icon="soap"><img src="assets/icons/soap.png?v=1794068300" alt=""><span>香皂</span></button>
-        <button type="button" class="slot filled is-new" data-item="釣竿" data-new="1" data-bonus="7" data-icon="rod"><img src="assets/icons/icon-fishing-rod.png?v=1794068300" alt=""><span>釣竿</span></button>
-        <button type="button" class="slot filled" data-item="魚餌" data-bonus="4" data-icon="icon-bait"><img src="assets/icons/icon-bait.png?v=1794068300" alt=""><span>魚餌</span></button>
-        <button type="button" class="slot filled" data-item="礦石" data-bonus="6" data-icon="ore"><img src="assets/icons/ore.png?v=1794068300" alt=""><span>礦石</span></button>
-        <button type="button" class="slot filled" data-item="原木" data-bonus="5" data-icon="log"><img src="assets/icons/icon-log.png?v=1794068300" alt=""><span>原木</span></button>
-        <button type="button" class="slot filled" data-item="漿果" data-bonus="3" data-icon="berry"><img src="assets/icons/berry.png?v=1794068300" alt=""><span>漿果</span></button>
-        <button type="button" class="slot filled" data-item="野菇" data-bonus="4" data-icon="mushroom-item"><img src="assets/icons/mushroom-item.png?v=1794068300" alt=""><span>野菇</span></button>
-        <button type="button" class="slot filled is-new" data-item="銀鑰匙" data-new="1" data-bonus="9" data-icon="icon-key-silver"><img src="assets/icons/icon-key-silver.png?v=1794068300" alt=""><span>銀鑰</span></button>
-        <button type="button" class="slot filled is-new" data-item="地圖碎片" data-new="1" data-bonus="7" data-icon="icon-map-scrap"><img src="assets/icons/icon-map-scrap.png?v=1794068300" alt=""><span>圖碎</span></button>
-        <button type="button" class="slot filled is-new" data-item="公會通行證" data-new="1" data-bonus="12" data-icon="icon-guild-pass"><img src="assets/icons/icon-guild-pass.png?v=1794068300" alt=""><span>通行證</span></button>
-        <button type="button" class="slot filled is-new" data-item="魔力藥水" data-new="1" data-bonus="8" data-icon="icon-potion-mana"><img src="assets/icons/icon-potion-mana.png?v=1794068300" alt=""><span>魔力</span></button>
-        <button type="button" class="slot filled is-new" data-item="委託卷軸" data-new="1" data-bonus="10" data-icon="icon-scroll-quest"><img src="assets/icons/icon-scroll-quest.png?v=1794068300" alt=""><span>卷軸</span></button>
-        <button type="button" class="slot filled is-new" data-item="縫線" data-new="1" data-bonus="5" data-icon="icon-thread"><img src="assets/icons/icon-thread.png?v=1794068300" alt=""><span>縫線</span></button>
-        <button type="button" class="slot filled is-new" data-item="木板" data-new="1" data-bonus="6" data-icon="icon-wood-plank"><img src="assets/icons/icon-wood-plank.png?v=1794068300" alt=""><span>木板</span></button>
-        <button type="button" class="slot filled is-new" data-item="鐵礦" data-new="1" data-bonus="7" data-icon="icon-ore-iron"><img src="assets/icons/icon-ore-iron.png?v=1794068300" alt=""><span>鐵礦</span></button>
-        <button type="button" class="slot filled is-new" data-item="綠草" data-new="1" data-bonus="4" data-icon="icon-herb-green"><img src="assets/icons/icon-herb-green.png?v=1794068300" alt=""><span>綠草</span></button>
-        <button type="button" class="slot filled is-new" data-item="小魚" data-new="1" data-bonus="5" data-icon="icon-fish-small"><img src="assets/icons/icon-fish-small.png?v=1794068300" alt=""><span>小魚</span></button>
-        <button type="button" class="slot filled is-new" data-item="紅寶石" data-new="1" data-bonus="14" data-icon="icon-gem-ruby"><img src="assets/icons/icon-gem-ruby.png?v=1794068300" alt=""><span>紅寶</span></button>
-        <button type="button" class="slot filled is-new" data-item="香料" data-new="1" data-bonus="6" data-icon="icon-spice"><img src="assets/icons/icon-spice.png?v=1794068300" alt=""><span>香料</span></button>
-        <button type="button" class="slot filled is-new" data-item="墨水瓶" data-new="1" data-bonus="5" data-icon="icon-ink-bottle"><img src="assets/icons/icon-ink-bottle.png?v=1794068300" alt=""><span>墨水</span></button>
-        <button type="button" class="slot filled is-new" data-item="種子袋" data-new="1" data-bonus="5" data-icon="icon-seed-bag"><img src="assets/icons/icon-seed-bag.png?v=1794068300" alt=""><span>種子</span></button>
-        <button type="button" class="slot filled is-new" data-item="黏土" data-new="1" data-bonus="4" data-icon="icon-clay"><img src="assets/icons/icon-clay.png?v=1794068300" alt=""><span>黏土</span></button>
-        <button type="button" class="slot filled is-new" data-item="通行票" data-new="1" data-bonus="6" data-icon="icon-ticket"><img src="assets/icons/icon-ticket.png?v=1794068300" alt=""><span>通行票</span></button>
-        <button type="button" class="slot filled is-new" data-item="提燈" data-new="1" data-bonus="7" data-icon="icon-lantern"><img src="assets/icons/icon-lantern.png?v=1794068300" alt=""><span>提燈</span></button>
-        <button type="button" class="slot filled is-new" data-item="精繩" data-new="1" data-bonus="6" data-icon="icon-rope"><img src="assets/icons/icon-rope.png?v=1794068300" alt=""><span>精繩</span></button>
-        <button type="button" class="slot filled is-new" data-item="船錨" data-new="1" data-bonus="8" data-icon="icon-anchor"><img src="assets/icons/icon-anchor.png?v=1794068300" alt=""><span>船錨</span></button>
-        <button type="button" class="slot filled is-new" data-item="箭束" data-new="1" data-bonus="7" data-icon="icon-arrow-bundle"><img src="assets/icons/icon-arrow-bundle.png?v=1794068300" alt=""><span>箭束</span></button>
-        <button type="button" class="slot filled is-new" data-item="聖水" data-new="1" data-bonus="9" data-icon="icon-holy-water"><img src="assets/icons/icon-holy-water.png?v=1794068300" alt=""><span>聖水</span></button>
-        <button type="button" class="slot filled is-new" data-item="珍珠" data-new="1" data-bonus="10" data-icon="icon-pearl"><img src="assets/icons/icon-pearl.png?v=1794068300" alt=""><span>珍珠</span></button>
-        <button type="button" class="slot filled is-new" data-item="橡實" data-new="1" data-bonus="3" data-icon="icon-acorn"><img src="assets/icons/icon-acorn.png?v=1794068300" alt=""><span>橡實</span></button>
-        <button type="button" class="slot filled is-new" data-item="迷你王冠" data-new="1" data-bonus="12" data-icon="icon-crown-mini"><img src="assets/icons/icon-crown-mini.png?v=1794068300" alt=""><span>王冠</span></button>
-        <button type="button" class="slot filled is-new" data-item="開鎖器" data-new="1" data-bonus="8" data-icon="icon-lockpick"><img src="assets/icons/icon-lockpick.png?v=1794068300" alt=""><span>開鎖</span></button>
-        <button type="button" class="slot filled is-new" data-item="魔法書" data-new="1" data-bonus="10" data-icon="icon-tome"><img src="assets/icons/icon-tome.png?v=1794068300" alt=""><span>魔書</span></button>
-        <button type="button" class="slot filled is-new" data-item="花束" data-new="1" data-bonus="5" data-icon="icon-bouquet"><img src="assets/icons/icon-bouquet.png?v=1794068300" alt=""><span>花束</span></button>
-        <button type="button" class="slot filled is-new" data-item="包裹" data-new="1" data-bonus="6" data-icon="icon-parcel"><img src="assets/icons/icon-parcel.png?v=1794068300" alt=""><span>包裹</span></button>
-        <button type="button" class="slot filled is-new" data-item="麵粉" data-new="1" data-bonus="4" data-icon="icon-flour"><img src="assets/icons/icon-flour.png?v=1794068300" alt=""><span>麵粉</span></button>
-        <button type="button" class="slot filled is-new" data-item="獸角" data-new="1" data-bonus="8" data-icon="icon-horn"><img src="assets/icons/icon-horn.png?v=1794068300" alt=""><span>獸角</span></button>
-        <button type="button" class="slot filled is-new" data-item="靈葉" data-new="1" data-bonus="5" data-icon="icon-leaf"><img src="assets/icons/icon-leaf.png?v=1794068300" alt=""><span>靈葉</span></button>
-        <button type="button" class="slot filled is-new" data-item="絲線" data-new="1" data-bonus="6" data-icon="icon-silk"><img src="assets/icons/icon-silk.png?v=1794068300" alt=""><span>絲線</span></button>
-        <button type="button" class="slot filled is-new" data-item="水晶球" data-new="1" data-bonus="11" data-icon="icon-crystal-ball"><img src="assets/icons/icon-crystal-ball.png?v=1794068300" alt=""><span>水晶球</span></button>
-        <button type="button" class="slot filled is-new" data-item="面具" data-new="1" data-bonus="7" data-icon="icon-mask"><img src="assets/icons/icon-mask.png?v=1794068300" alt=""><span>面具</span></button>
-        <button type="button" class="slot filled is-new" data-item="食譜" data-new="1" data-bonus="6" data-icon="icon-recipe"><img src="assets/icons/icon-recipe.png?v=1794068300" alt=""><span>食譜</span></button>
-        <button type="button" class="slot filled is-new" data-item="長弓" data-new="1" data-bonus="12" data-icon="equip-bow"><img src="assets/icons/equip-bow.png?v=1794068300" alt=""><span>長弓</span></button>
-        <button type="button" class="slot filled is-new" data-item="法杖" data-new="1" data-bonus="12" data-icon="equip-staff"><img src="assets/icons/equip-staff.png?v=1794068300" alt=""><span>法杖</span></button>
-        <button type="button" class="slot filled is-new" data-item="磨刀石" data-new="1" data-bonus="5" data-icon="icon-whetstone"><img src="assets/icons/icon-whetstone.png?v=1794068300" alt=""><span>磨刀石</span></button>
-        <button type="button" class="slot filled is-new" data-item="箭筒" data-new="1" data-bonus="7" data-icon="icon-quiver"><img src="assets/icons/icon-quiver.png?v=1794068300" alt=""><span>箭筒</span></button>
-        <button type="button" class="slot filled is-new" data-item="魔力結晶" data-new="1" data-bonus="9" data-icon="icon-mana-crystal"><img src="assets/icons/icon-mana-crystal.png?v=1794068300" alt=""><span>魔晶</span></button>
-        <button type="button" class="slot filled is-new" data-item="勝利獎盃" data-new="1" data-bonus="12" data-icon="icon-trophy"><img src="assets/icons/icon-trophy.png?v=1794068300" alt=""><span>獎盃</span></button>
-        <button type="button" class="slot filled is-new" data-item="繃帶" data-new="1" data-bonus="5" data-icon="icon-bandage"><img src="assets/icons/icon-bandage.png?v=1794068300" alt=""><span>繃帶</span></button>
-        <button type="button" class="slot filled is-new quest-item" data-item="塔羅牌" data-new="1" data-bonus="8" data-icon="icon-tarot"><img src="assets/icons/icon-tarot.png?v=1794068300" alt=""><span>塔羅</span></button>
-        <button type="button" class="slot filled is-new" data-item="稅印" data-new="1" data-bonus="7" data-icon="icon-tax-seal"><img src="assets/icons/icon-tax-seal.png?v=1794068300" alt=""><span>稅印</span></button>
-        <button type="button" class="slot filled is-new" data-item="魯特琴" data-new="1" data-bonus="8" data-icon="icon-lute"><img src="assets/icons/icon-lute.png?v=1794068300" alt=""><span>魯特琴</span></button>
-        <button type="button" class="slot filled is-new" data-item="紅草藥" data-new="1" data-bonus="6" data-icon="icon-herb-red"><img src="assets/icons/icon-herb-red.png?v=1794068300" alt=""><span>紅草</span></button>
-        <button type="button" class="slot filled is-new" data-item="朗姆酒" data-new="1" data-bonus="6" data-icon="icon-rum"><img src="assets/icons/icon-rum.png?v=1794068300" alt=""><span>朗姆</span></button>
-        <button type="button" class="slot filled is-new" data-item="餡餅" data-new="1" data-bonus="8" data-icon="food-pie"><img src="assets/icons/food-pie.png?v=1794068300" alt=""><span>餡餅</span></button>
-        <button type="button" class="slot filled is-new" data-item="熱茶" data-new="1" data-bonus="4" data-icon="food-tea"><img src="assets/icons/food-tea.png?v=1794068300" alt=""><span>熱茶</span></button>
-        <button type="button" class="slot filled is-new" data-item="馬鞭" data-new="1" data-bonus="5" data-icon="icon-whip"><img src="assets/icons/icon-whip.png?v=1794068300" alt=""><span>馬鞭</span></button>
-        <button type="button" class="slot filled is-new" data-item="船槳" data-new="1" data-bonus="5" data-icon="icon-oar"><img src="assets/icons/icon-oar.png?v=1794068300" alt=""><span>船槳</span></button>
-        <button type="button" class="slot filled is-new" data-item="茶壺" data-new="1" data-bonus="6" data-icon="icon-teapot"><img src="assets/icons/icon-teapot.png?v=1794068300" alt=""><span>茶壺</span></button>
-        <button type="button" class="slot filled is-new" data-item="錢袋" data-new="1" data-bonus="8" data-icon="icon-coin-purse"><img src="assets/icons/icon-coin-purse.png?v=1794068300" alt=""><span>錢袋</span></button>
-        <button type="button" class="slot filled is-new" data-item="獻花花禮" data-new="1" data-bonus="8" data-icon="gift-flower"><img src="assets/icons/gift-flower.png?v=1794068300" alt=""><span>花禮</span></button>
-        <button type="button" class="slot filled is-new" data-item="禮物信" data-new="1" data-bonus="6" data-icon="gift-letter"><img src="assets/icons/gift-letter.png?v=1794068300" alt=""><span>禮信</span></button>
-        <button type="button" class="slot filled is-new" data-item="礦鎬" data-new="1" data-bonus="7" data-icon="icon-pickaxe"><img src="assets/icons/icon-pickaxe.png?v=1794068300" alt=""><span>礦鎬</span></button>
-        <button type="button" class="slot filled is-new" data-item="錠材" data-new="1" data-bonus="6" data-icon="mat-ingot"><img src="assets/icons/mat-ingot.png?v=1794068300" alt=""><span>錠材</span></button>
-        <button type="button" class="slot filled is-new" data-item="青銅寶箱" data-new="1" data-bonus="10" data-icon="chest-bronze"><img src="assets/icons/chest-bronze.png?v=1794068300" alt=""><span>銅箱</span></button>
-        <button type="button" class="slot filled is-new" data-item="白銀寶箱" data-new="1" data-bonus="14" data-icon="chest-silver"><img src="assets/icons/chest-silver.png?v=1794068300" alt=""><span>銀箱</span></button>
-        <button type="button" class="slot filled is-new" data-item="黃金寶箱" data-new="1" data-bonus="18" data-icon="chest-gold"><img src="assets/icons/chest-gold.png?v=1794068300" alt=""><span>金箱</span></button>
-        <button type="button" class="slot filled is-new" data-item="銅鑰匙" data-new="1" data-bonus="6" data-icon="icon-key-bronze"><img src="assets/icons/icon-key-bronze.png?v=1794068300" alt=""><span>銅鑰</span></button>
-        <button type="button" class="slot filled is-new" data-item="金鑰匙" data-new="1" data-bonus="12" data-icon="icon-key-gold"><img src="assets/icons/icon-key-gold.png?v=1794068300" alt=""><span>金鑰</span></button>
+        <button type="button" class="slot filled" data-item="生命藥水" data-bonus="8" data-icon="potion"><img src="assets/icons/potion.png?v=1794068400" alt=""><span>藥水</span></button>
+        <button type="button" class="slot filled" data-item="地下城地圖" data-bonus="10" data-icon="map"><img src="assets/icons/map.png?v=1794068400" alt=""><span>地圖</span></button>
+        <button type="button" class="slot filled" data-item="長劍" data-bonus="14" data-icon="equip-sword"><img src="assets/icons/eq-sword-wood.png?v=1794068400" alt=""><span>長劍</span></button>
+        <button type="button" class="slot filled" data-item="木盾" data-bonus="9" data-icon="equip-shield"><img src="assets/icons/eq-shield-round.png?v=1794068400" alt=""><span>木盾</span></button>
+        <button type="button" class="slot filled" data-item="鎧甲" data-bonus="12" data-icon="armor"><img src="assets/icons/armor.png?v=1794068400" alt=""><span>鎧甲</span></button>
+        <button type="button" class="slot filled" data-item="皮靴" data-bonus="7" data-icon="boots"><img src="assets/icons/boots.png?v=1794068400" alt=""><span>皮靴</span></button>
+        <button type="button" class="slot filled" data-item="頭盔" data-bonus="10" data-icon="helmet"><img src="assets/icons/helmet.png?v=1794068400" alt=""><span>頭盔</span></button>
+        <button type="button" class="slot filled" data-item="火把" data-bonus="6" data-icon="torch"><img src="assets/icons/torch.png?v=1794068400" alt=""><span>火把</span></button>
+        <button type="button" class="slot filled" data-item="繩索" data-bonus="8" data-icon="rope"><img src="assets/icons/rope.png?v=1794068400" alt=""><span>繩索</span></button>
+        <button type="button" class="slot filled" data-item="炸彈" data-bonus="15" data-icon="bomb"><img src="assets/icons/bomb.png?v=1794068400" alt=""><span>炸彈</span></button>
+        <button type="button" class="slot filled" data-item="鎬子" data-bonus="9" data-icon="pickaxe"><img src="assets/icons/pickaxe.png?v=1794068400" alt=""><span>鎬子</span></button>
+        <button type="button" class="slot filled" data-item="解毒劑" data-bonus="11" data-icon="antidote"><img src="assets/icons/antidote.png?v=1794068400" alt=""><span>解毒</span></button>
+        <button type="button" class="slot filled" data-item="委託書" data-bonus="5" data-icon="contract"><img src="assets/icons/contract.png?v=1794068400" alt=""><span>委託</span></button>
+        <button type="button" class="slot filled is-new" data-item="功勳章" data-new="1" data-bonus="8" data-icon="medal"><img src="assets/icons/medal.png?v=1794068400" alt=""><span>功勳</span></button>
+        <button type="button" class="slot filled" data-item="推薦信" data-bonus="6" data-icon="letter"><img src="assets/icons/letter.png?v=1794068400" alt=""><span>書信</span></button>
+        <button type="button" class="slot filled food" data-item="燉菜" data-bonus="9" data-buff="rate" data-icon="stew"><img src="assets/icons/food-stew.png?v=1794068400" alt=""><span>燉菜</span></button>
+        <button type="button" class="slot filled food" data-item="蛋糕" data-bonus="7" data-buff="rate" data-icon="cake"><img src="assets/icons/cake.png?v=1794068400" alt=""><span>蛋糕</span></button>
+        <button type="button" class="slot filled food" data-item="烤魚" data-bonus="8" data-buff="heal" data-icon="fish-dish"><img src="assets/icons/fish-dish.png?v=1794068400" alt=""><span>烤魚</span></button>
+        <button type="button" class="slot filled food" data-item="蘋果" data-bonus="5" data-buff="heal" data-icon="apple"><img src="assets/icons/apple.png?v=1794068400" alt=""><span>蘋果</span></button>
+        <button type="button" class="slot filled food" data-item="蜂蜜" data-bonus="6" data-buff="rate" data-icon="honey"><img src="assets/icons/icon-honey.png?v=1794068400" alt=""><span>蜂蜜</span></button>
+        <button type="button" class="slot filled food" data-item="鮮奶" data-bonus="5" data-buff="heal" data-icon="milk"><img src="assets/icons/milk.png?v=1794068400" alt=""><span>鮮奶</span></button>
+        <button type="button" class="slot filled is-new" data-item="慶祝禮物" data-new="1" data-bonus="10" data-icon="gift"><img src="assets/icons/gift-box.png?v=1794068400" alt=""><span>禮物</span></button>
+        <button type="button" class="slot filled" data-item="慶祝氣球" data-bonus="4" data-icon="balloon"><img src="assets/icons/balloon.png?v=1794068400" alt=""><span>氣球</span></button>
+        <button type="button" class="slot filled" data-item="啞鈴" data-bonus="6" data-icon="dumbbell"><img src="assets/icons/icon-dumbbell.png?v=1794068400" alt=""><span>啞鈴</span></button>
+        <button type="button" class="slot filled" data-item="準星靶" data-bonus="7" data-icon="target"><img src="assets/icons/target.png?v=1794068400" alt=""><span>靶子</span></button>
+        <button type="button" class="slot filled is-new" data-item="鐵鎚" data-new="1" data-bonus="8" data-icon="hammer"><img src="assets/icons/hammer.png?v=1794068400" alt=""><span>鐵鎚</span></button>
+        <button type="button" class="slot filled" data-item="鐵釘" data-bonus="5" data-icon="nails"><img src="assets/icons/nails.png?v=1794068400" alt=""><span>鐵釘</span></button>
+        <button type="button" class="slot filled" data-item="設計圖" data-bonus="9" data-icon="blueprint"><img src="assets/icons/icon-blueprint.png?v=1794068400" alt=""><span>藍圖</span></button>
+        <button type="button" class="slot filled is-new" data-item="煙霧彈" data-new="1" data-bonus="12" data-icon="bomb-smoke"><img src="assets/icons/bomb-smoke.png?v=1794068400" alt=""><span>煙彈</span></button>
+        <button type="button" class="slot filled" data-item="魔鏡" data-bonus="10" data-icon="mirror"><img src="assets/icons/mirror.png?v=1794068400" alt=""><span>魔鏡</span></button>
+        <button type="button" class="slot filled" data-item="鳳凰羽" data-bonus="11" data-icon="feather"><img src="assets/icons/icon-feather.png?v=1794068400" alt=""><span>羽</span></button>
+        <button type="button" class="slot filled" data-item="水晶碎片" data-bonus="13" data-icon="crystal-shard"><img src="assets/icons/crystal-shard.png?v=1794068400" alt=""><span>晶片</span></button>
+        <button type="button" class="slot filled is-new" data-item="指南針" data-new="1" data-bonus="8" data-icon="compass"><img src="assets/icons/icon-compass.png?v=1794068400" alt=""><span>羅盤</span></button>
+        <button type="button" class="slot filled" data-item="軟枕" data-bonus="4" data-icon="pillow"><img src="assets/icons/pillow.png?v=1794068400" alt=""><span>軟枕</span></button>
+        <button type="button" class="slot filled" data-item="香皂" data-bonus="3" data-icon="soap"><img src="assets/icons/soap.png?v=1794068400" alt=""><span>香皂</span></button>
+        <button type="button" class="slot filled is-new" data-item="釣竿" data-new="1" data-bonus="7" data-icon="rod"><img src="assets/icons/icon-fishing-rod.png?v=1794068400" alt=""><span>釣竿</span></button>
+        <button type="button" class="slot filled" data-item="魚餌" data-bonus="4" data-icon="icon-bait"><img src="assets/icons/icon-bait.png?v=1794068400" alt=""><span>魚餌</span></button>
+        <button type="button" class="slot filled" data-item="礦石" data-bonus="6" data-icon="ore"><img src="assets/icons/ore.png?v=1794068400" alt=""><span>礦石</span></button>
+        <button type="button" class="slot filled" data-item="原木" data-bonus="5" data-icon="log"><img src="assets/icons/icon-log.png?v=1794068400" alt=""><span>原木</span></button>
+        <button type="button" class="slot filled" data-item="漿果" data-bonus="3" data-icon="berry"><img src="assets/icons/berry.png?v=1794068400" alt=""><span>漿果</span></button>
+        <button type="button" class="slot filled" data-item="野菇" data-bonus="4" data-icon="mushroom-item"><img src="assets/icons/mushroom-item.png?v=1794068400" alt=""><span>野菇</span></button>
+        <button type="button" class="slot filled is-new" data-item="銀鑰匙" data-new="1" data-bonus="9" data-icon="icon-key-silver"><img src="assets/icons/icon-key-silver.png?v=1794068400" alt=""><span>銀鑰</span></button>
+        <button type="button" class="slot filled is-new" data-item="地圖碎片" data-new="1" data-bonus="7" data-icon="icon-map-scrap"><img src="assets/icons/icon-map-scrap.png?v=1794068400" alt=""><span>圖碎</span></button>
+        <button type="button" class="slot filled is-new" data-item="公會通行證" data-new="1" data-bonus="12" data-icon="icon-guild-pass"><img src="assets/icons/icon-guild-pass.png?v=1794068400" alt=""><span>通行證</span></button>
+        <button type="button" class="slot filled is-new" data-item="魔力藥水" data-new="1" data-bonus="8" data-icon="icon-potion-mana"><img src="assets/icons/icon-potion-mana.png?v=1794068400" alt=""><span>魔力</span></button>
+        <button type="button" class="slot filled is-new" data-item="委託卷軸" data-new="1" data-bonus="10" data-icon="icon-scroll-quest"><img src="assets/icons/icon-scroll-quest.png?v=1794068400" alt=""><span>卷軸</span></button>
+        <button type="button" class="slot filled is-new" data-item="縫線" data-new="1" data-bonus="5" data-icon="icon-thread"><img src="assets/icons/icon-thread.png?v=1794068400" alt=""><span>縫線</span></button>
+        <button type="button" class="slot filled is-new" data-item="木板" data-new="1" data-bonus="6" data-icon="icon-wood-plank"><img src="assets/icons/icon-wood-plank.png?v=1794068400" alt=""><span>木板</span></button>
+        <button type="button" class="slot filled is-new" data-item="鐵礦" data-new="1" data-bonus="7" data-icon="icon-ore-iron"><img src="assets/icons/icon-ore-iron.png?v=1794068400" alt=""><span>鐵礦</span></button>
+        <button type="button" class="slot filled is-new" data-item="綠草" data-new="1" data-bonus="4" data-icon="icon-herb-green"><img src="assets/icons/icon-herb-green.png?v=1794068400" alt=""><span>綠草</span></button>
+        <button type="button" class="slot filled is-new" data-item="小魚" data-new="1" data-bonus="5" data-icon="icon-fish-small"><img src="assets/icons/icon-fish-small.png?v=1794068400" alt=""><span>小魚</span></button>
+        <button type="button" class="slot filled is-new" data-item="紅寶石" data-new="1" data-bonus="14" data-icon="icon-gem-ruby"><img src="assets/icons/icon-gem-ruby.png?v=1794068400" alt=""><span>紅寶</span></button>
+        <button type="button" class="slot filled is-new" data-item="香料" data-new="1" data-bonus="6" data-icon="icon-spice"><img src="assets/icons/icon-spice.png?v=1794068400" alt=""><span>香料</span></button>
+        <button type="button" class="slot filled is-new" data-item="墨水瓶" data-new="1" data-bonus="5" data-icon="icon-ink-bottle"><img src="assets/icons/icon-ink-bottle.png?v=1794068400" alt=""><span>墨水</span></button>
+        <button type="button" class="slot filled is-new" data-item="種子袋" data-new="1" data-bonus="5" data-icon="icon-seed-bag"><img src="assets/icons/icon-seed-bag.png?v=1794068400" alt=""><span>種子</span></button>
+        <button type="button" class="slot filled is-new" data-item="黏土" data-new="1" data-bonus="4" data-icon="icon-clay"><img src="assets/icons/icon-clay.png?v=1794068400" alt=""><span>黏土</span></button>
+        <button type="button" class="slot filled is-new" data-item="通行票" data-new="1" data-bonus="6" data-icon="icon-ticket"><img src="assets/icons/icon-ticket.png?v=1794068400" alt=""><span>通行票</span></button>
+        <button type="button" class="slot filled is-new" data-item="提燈" data-new="1" data-bonus="7" data-icon="icon-lantern"><img src="assets/icons/icon-lantern.png?v=1794068400" alt=""><span>提燈</span></button>
+        <button type="button" class="slot filled is-new" data-item="精繩" data-new="1" data-bonus="6" data-icon="icon-rope"><img src="assets/icons/icon-rope.png?v=1794068400" alt=""><span>精繩</span></button>
+        <button type="button" class="slot filled is-new" data-item="船錨" data-new="1" data-bonus="8" data-icon="icon-anchor"><img src="assets/icons/icon-anchor.png?v=1794068400" alt=""><span>船錨</span></button>
+        <button type="button" class="slot filled is-new" data-item="箭束" data-new="1" data-bonus="7" data-icon="icon-arrow-bundle"><img src="assets/icons/icon-arrow-bundle.png?v=1794068400" alt=""><span>箭束</span></button>
+        <button type="button" class="slot filled is-new" data-item="聖水" data-new="1" data-bonus="9" data-icon="icon-holy-water"><img src="assets/icons/icon-holy-water.png?v=1794068400" alt=""><span>聖水</span></button>
+        <button type="button" class="slot filled is-new" data-item="珍珠" data-new="1" data-bonus="10" data-icon="icon-pearl"><img src="assets/icons/icon-pearl.png?v=1794068400" alt=""><span>珍珠</span></button>
+        <button type="button" class="slot filled is-new" data-item="橡實" data-new="1" data-bonus="3" data-icon="icon-acorn"><img src="assets/icons/icon-acorn.png?v=1794068400" alt=""><span>橡實</span></button>
+        <button type="button" class="slot filled is-new" data-item="迷你王冠" data-new="1" data-bonus="12" data-icon="icon-crown-mini"><img src="assets/icons/icon-crown-mini.png?v=1794068400" alt=""><span>王冠</span></button>
+        <button type="button" class="slot filled is-new" data-item="開鎖器" data-new="1" data-bonus="8" data-icon="icon-lockpick"><img src="assets/icons/icon-lockpick.png?v=1794068400" alt=""><span>開鎖</span></button>
+        <button type="button" class="slot filled is-new" data-item="魔法書" data-new="1" data-bonus="10" data-icon="icon-tome"><img src="assets/icons/icon-tome.png?v=1794068400" alt=""><span>魔書</span></button>
+        <button type="button" class="slot filled is-new" data-item="花束" data-new="1" data-bonus="5" data-icon="icon-bouquet"><img src="assets/icons/icon-bouquet.png?v=1794068400" alt=""><span>花束</span></button>
+        <button type="button" class="slot filled is-new" data-item="包裹" data-new="1" data-bonus="6" data-icon="icon-parcel"><img src="assets/icons/icon-parcel.png?v=1794068400" alt=""><span>包裹</span></button>
+        <button type="button" class="slot filled is-new" data-item="麵粉" data-new="1" data-bonus="4" data-icon="icon-flour"><img src="assets/icons/icon-flour.png?v=1794068400" alt=""><span>麵粉</span></button>
+        <button type="button" class="slot filled is-new" data-item="獸角" data-new="1" data-bonus="8" data-icon="icon-horn"><img src="assets/icons/icon-horn.png?v=1794068400" alt=""><span>獸角</span></button>
+        <button type="button" class="slot filled is-new" data-item="靈葉" data-new="1" data-bonus="5" data-icon="icon-leaf"><img src="assets/icons/icon-leaf.png?v=1794068400" alt=""><span>靈葉</span></button>
+        <button type="button" class="slot filled is-new" data-item="絲線" data-new="1" data-bonus="6" data-icon="icon-silk"><img src="assets/icons/icon-silk.png?v=1794068400" alt=""><span>絲線</span></button>
+        <button type="button" class="slot filled is-new" data-item="水晶球" data-new="1" data-bonus="11" data-icon="icon-crystal-ball"><img src="assets/icons/icon-crystal-ball.png?v=1794068400" alt=""><span>水晶球</span></button>
+        <button type="button" class="slot filled is-new" data-item="面具" data-new="1" data-bonus="7" data-icon="icon-mask"><img src="assets/icons/icon-mask.png?v=1794068400" alt=""><span>面具</span></button>
+        <button type="button" class="slot filled is-new" data-item="食譜" data-new="1" data-bonus="6" data-icon="icon-recipe"><img src="assets/icons/icon-recipe.png?v=1794068400" alt=""><span>食譜</span></button>
+        <button type="button" class="slot filled is-new" data-item="長弓" data-new="1" data-bonus="12" data-icon="equip-bow"><img src="assets/icons/equip-bow.png?v=1794068400" alt=""><span>長弓</span></button>
+        <button type="button" class="slot filled is-new" data-item="法杖" data-new="1" data-bonus="12" data-icon="equip-staff"><img src="assets/icons/equip-staff.png?v=1794068400" alt=""><span>法杖</span></button>
+        <button type="button" class="slot filled is-new" data-item="磨刀石" data-new="1" data-bonus="5" data-icon="icon-whetstone"><img src="assets/icons/icon-whetstone.png?v=1794068400" alt=""><span>磨刀石</span></button>
+        <button type="button" class="slot filled is-new" data-item="箭筒" data-new="1" data-bonus="7" data-icon="icon-quiver"><img src="assets/icons/icon-quiver.png?v=1794068400" alt=""><span>箭筒</span></button>
+        <button type="button" class="slot filled is-new" data-item="魔力結晶" data-new="1" data-bonus="9" data-icon="icon-mana-crystal"><img src="assets/icons/icon-mana-crystal.png?v=1794068400" alt=""><span>魔晶</span></button>
+        <button type="button" class="slot filled is-new" data-item="勝利獎盃" data-new="1" data-bonus="12" data-icon="icon-trophy"><img src="assets/icons/icon-trophy.png?v=1794068400" alt=""><span>獎盃</span></button>
+        <button type="button" class="slot filled is-new" data-item="繃帶" data-new="1" data-bonus="5" data-icon="icon-bandage"><img src="assets/icons/icon-bandage.png?v=1794068400" alt=""><span>繃帶</span></button>
+        <button type="button" class="slot filled is-new quest-item" data-item="塔羅牌" data-new="1" data-bonus="8" data-icon="icon-tarot"><img src="assets/icons/icon-tarot.png?v=1794068400" alt=""><span>塔羅</span></button>
+        <button type="button" class="slot filled is-new" data-item="稅印" data-new="1" data-bonus="7" data-icon="icon-tax-seal"><img src="assets/icons/icon-tax-seal.png?v=1794068400" alt=""><span>稅印</span></button>
+        <button type="button" class="slot filled is-new" data-item="魯特琴" data-new="1" data-bonus="8" data-icon="icon-lute"><img src="assets/icons/icon-lute.png?v=1794068400" alt=""><span>魯特琴</span></button>
+        <button type="button" class="slot filled is-new" data-item="紅草藥" data-new="1" data-bonus="6" data-icon="icon-herb-red"><img src="assets/icons/icon-herb-red.png?v=1794068400" alt=""><span>紅草</span></button>
+        <button type="button" class="slot filled is-new" data-item="朗姆酒" data-new="1" data-bonus="6" data-icon="icon-rum"><img src="assets/icons/icon-rum.png?v=1794068400" alt=""><span>朗姆</span></button>
+        <button type="button" class="slot filled is-new" data-item="餡餅" data-new="1" data-bonus="8" data-icon="food-pie"><img src="assets/icons/food-pie.png?v=1794068400" alt=""><span>餡餅</span></button>
+        <button type="button" class="slot filled is-new" data-item="熱茶" data-new="1" data-bonus="4" data-icon="food-tea"><img src="assets/icons/food-tea.png?v=1794068400" alt=""><span>熱茶</span></button>
+        <button type="button" class="slot filled is-new" data-item="馬鞭" data-new="1" data-bonus="5" data-icon="icon-whip"><img src="assets/icons/icon-whip.png?v=1794068400" alt=""><span>馬鞭</span></button>
+        <button type="button" class="slot filled is-new" data-item="船槳" data-new="1" data-bonus="5" data-icon="icon-oar"><img src="assets/icons/icon-oar.png?v=1794068400" alt=""><span>船槳</span></button>
+        <button type="button" class="slot filled is-new" data-item="茶壺" data-new="1" data-bonus="6" data-icon="icon-teapot"><img src="assets/icons/icon-teapot.png?v=1794068400" alt=""><span>茶壺</span></button>
+        <button type="button" class="slot filled is-new" data-item="錢袋" data-new="1" data-bonus="8" data-icon="icon-coin-purse"><img src="assets/icons/icon-coin-purse.png?v=1794068400" alt=""><span>錢袋</span></button>
+        <button type="button" class="slot filled is-new" data-item="獻花花禮" data-new="1" data-bonus="8" data-icon="gift-flower"><img src="assets/icons/gift-flower.png?v=1794068400" alt=""><span>花禮</span></button>
+        <button type="button" class="slot filled is-new" data-item="禮物信" data-new="1" data-bonus="6" data-icon="gift-letter"><img src="assets/icons/gift-letter.png?v=1794068400" alt=""><span>禮信</span></button>
+        <button type="button" class="slot filled is-new" data-item="礦鎬" data-new="1" data-bonus="7" data-icon="icon-pickaxe"><img src="assets/icons/icon-pickaxe.png?v=1794068400" alt=""><span>礦鎬</span></button>
+        <button type="button" class="slot filled is-new" data-item="錠材" data-new="1" data-bonus="6" data-icon="mat-ingot"><img src="assets/icons/mat-ingot.png?v=1794068400" alt=""><span>錠材</span></button>
+        <button type="button" class="slot filled is-new" data-item="青銅寶箱" data-new="1" data-bonus="10" data-icon="chest-bronze"><img src="assets/icons/chest-bronze.png?v=1794068400" alt=""><span>銅箱</span></button>
+        <button type="button" class="slot filled is-new" data-item="白銀寶箱" data-new="1" data-bonus="14" data-icon="chest-silver"><img src="assets/icons/chest-silver.png?v=1794068400" alt=""><span>銀箱</span></button>
+        <button type="button" class="slot filled is-new" data-item="黃金寶箱" data-new="1" data-bonus="18" data-icon="chest-gold"><img src="assets/icons/chest-gold.png?v=1794068400" alt=""><span>金箱</span></button>
+        <button type="button" class="slot filled is-new" data-item="銅鑰匙" data-new="1" data-bonus="6" data-icon="icon-key-bronze"><img src="assets/icons/icon-key-bronze.png?v=1794068400" alt=""><span>銅鑰</span></button>
+        <button type="button" class="slot filled is-new" data-item="金鑰匙" data-new="1" data-bonus="12" data-icon="icon-key-gold"><img src="assets/icons/icon-key-gold.png?v=1794068400" alt=""><span>金鑰</span></button>
 
-        <button type="button" class="slot filled is-new" data-item="布料" data-new="1" data-bonus="5" data-icon="mat-cloth"><img src="assets/icons/mat-cloth.png?v=1794068300" alt=""><span>布料</span></button>
-        <button type="button" class="slot filled is-new" data-item="空藥瓶" data-new="1" data-bonus="3" data-icon="mat-potion-empty"><img src="assets/icons/mat-potion-empty.png?v=1794068300" alt=""><span>空瓶</span></button>
-        <button type="button" class="slot filled is-new" data-item="縫針" data-new="1" data-bonus="4" data-icon="icon-needle"><img src="assets/icons/icon-needle.png?v=1794068300" alt=""><span>縫針</span></button>
-        <button type="button" class="slot filled is-new" data-item="試管" data-new="1" data-bonus="4" data-icon="icon-vial"><img src="assets/icons/icon-vial.png?v=1794068300" alt=""><span>試管</span></button>
-        <button type="button" class="slot filled is-new" data-item="鋸子" data-new="1" data-bonus="5" data-icon="icon-saw"><img src="assets/icons/icon-saw.png?v=1794068300" alt=""><span>鋸子</span></button>
+        <button type="button" class="slot filled is-new" data-item="布料" data-new="1" data-bonus="5" data-icon="mat-cloth"><img src="assets/icons/mat-cloth.png?v=1794068400" alt=""><span>布料</span></button>
+        <button type="button" class="slot filled is-new" data-item="空藥瓶" data-new="1" data-bonus="3" data-icon="mat-potion-empty"><img src="assets/icons/mat-potion-empty.png?v=1794068400" alt=""><span>空瓶</span></button>
+        <button type="button" class="slot filled is-new" data-item="縫針" data-new="1" data-bonus="4" data-icon="icon-needle"><img src="assets/icons/icon-needle.png?v=1794068400" alt=""><span>縫針</span></button>
+        <button type="button" class="slot filled is-new" data-item="試管" data-new="1" data-bonus="4" data-icon="icon-vial"><img src="assets/icons/icon-vial.png?v=1794068400" alt=""><span>試管</span></button>
+        <button type="button" class="slot filled is-new" data-item="鋸子" data-new="1" data-bonus="5" data-icon="icon-saw"><img src="assets/icons/icon-saw.png?v=1794068400" alt=""><span>鋸子</span></button>
 
-        <button type="button" class="slot filled is-new" data-item="修枝剪" data-new="1" data-bonus="5" data-icon="icon-shears"><img src="assets/icons/icon-shears.png?v=1794068300" alt=""><span>修枝剪</span></button>
-
-
-
-        <button type="button" class="slot filled is-new" data-item="念珠" data-new="1" data-bonus="7" data-icon="icon-rosary"><img src="assets/icons/icon-rosary.png?v=1794068300" alt=""><span>念珠</span></button>
-        <button type="button" class="slot filled is-new" data-item="小鐵鎚" data-new="1" data-bonus="5" data-icon="icon-hammer-small"><img src="assets/icons/icon-hammer-small.png?v=1794068300" alt=""><span>小鎚</span></button>
+        <button type="button" class="slot filled is-new" data-item="修枝剪" data-new="1" data-bonus="5" data-icon="icon-shears"><img src="assets/icons/icon-shears.png?v=1794068400" alt=""><span>修枝剪</span></button>
 
 
+
+        <button type="button" class="slot filled is-new" data-item="念珠" data-new="1" data-bonus="7" data-icon="icon-rosary"><img src="assets/icons/icon-rosary.png?v=1794068400" alt=""><span>念珠</span></button>
+        <button type="button" class="slot filled is-new" data-item="小鐵鎚" data-new="1" data-bonus="5" data-icon="icon-hammer-small"><img src="assets/icons/icon-hammer-small.png?v=1794068400" alt=""><span>小鎚</span></button>
 
 
 
@@ -302,7 +300,9 @@
 
 
 
-        <button type="button" class="slot filled is-new" data-item="幸運符" data-new="1" data-bonus="11" data-icon="icon-charm-luck"><img src="assets/icons/icon-charm-luck.png?v=1794068300" alt=""><span>幸符</span></button>
+
+
+        <button type="button" class="slot filled is-new" data-item="幸運符" data-new="1" data-bonus="11" data-icon="icon-charm-luck"><img src="assets/icons/icon-charm-luck.png?v=1794068400" alt=""><span>幸符</span></button>
       </div>
     </section>
 
@@ -311,8 +311,8 @@
       <div class="dungeon-header">
         <div class="dungeon-label">地城攻略</div>
         <div class="dungeon-progress" id="dungeon-progress" hidden>
-          <img class="spin-ico" id="dungeon-spinner" src="assets/ui/spinner-wood.png?v=1794068300" alt="" />
-          <img class="hour-ico" src="assets/ui/hourglass.png?v=1794068300" alt="" />
+          <img class="spin-ico" id="dungeon-spinner" src="assets/ui/spinner-wood.png?v=1794068400" alt="" />
+          <img class="hour-ico" src="assets/ui/hourglass.png?v=1794068400" alt="" />
           <div class="prog-track"><div class="prog-fill" id="dungeon-prog-fill"></div></div>
         </div>
         <div class="dungeon-hint" id="dungeon-hint">隊員前進 · 遇怪 · 勝寶箱／敗十字架 · <span class="log-cue">撳睇 log</span></div>
@@ -333,8 +333,8 @@
     <div class="weather-overlay" id="weather-overlay" hidden aria-hidden="true"></div>
     <div class="celebrate-overlay" id="celebrate-overlay" hidden aria-hidden="true"></div>
     <div class="toast" id="toast" hidden><img class="toast-ico" id="toast-ico" alt="" hidden/><span id="toast-msg"></span></div>
-    <div class="boot-splash" id="boot-splash" hidden aria-hidden="true"><img class="splash-crest" src="assets/ui/splash-guild-crest.png?v=1794068300" alt="公會"/><img class="loading-spinner" src="assets/ui/loading-spinner.png?v=1794068300" alt="載入"/><img class="loading-quill" src="assets/ui/loading-quill.png?v=1794068300" alt=""/><img class="loading-dots" src="assets/ui/loading-dots.png?v=1794068300" alt="載入中"/><img class="please-wait-banner" src="assets/ui/please-wait-banner.png?v=1794068300" alt="請稍候"/></div>
-    <div class="friendship-fx" id="friendship-fx" hidden aria-hidden="true"><img src="assets/ui/friendship-up.png?v=1794068300" alt="友情↑"/></div>
+    <div class="boot-splash" id="boot-splash" hidden aria-hidden="true"><img class="splash-crest" src="assets/ui/splash-guild-crest.png?v=1794068400" alt="公會"/><img class="loading-spinner" src="assets/ui/loading-spinner.png?v=1794068400" alt="載入"/><img class="loading-quill" src="assets/ui/loading-quill.png?v=1794068400" alt=""/><img class="loading-dots" src="assets/ui/loading-dots.png?v=1794068400" alt="載入中"/><img class="please-wait-banner" src="assets/ui/please-wait-banner.png?v=1794068400" alt="請稍候"/></div>
+    <div class="friendship-fx" id="friendship-fx" hidden aria-hidden="true"><img src="assets/ui/friendship-up.png?v=1794068400" alt="友情↑"/></div>
     <div class="modal" id="modal" hidden>
       <div class="modal-card" role="dialog" aria-modal="true">
         <img class="quest-stamp" id="quest-stamp" alt="" hidden />
@@ -342,10 +342,10 @@
         <div class="modal-title" id="modal-title"></div>
         <div class="modal-body" id="modal-body"></div>
         <div class="modal-actions" id="modal-actions">
-          <button type="button" class="modal-btn form" id="btn-accept"><img class="modal-ico" src="assets/ui/btn-ok.png?v=1794068300" alt=""/>接任務</button>
-          <button type="button" class="modal-btn dispatch" id="btn-dispatch"><img class="modal-ico" src="assets/ui/btn-ok.png?v=1794068300" alt=""/>派出</button>
+          <button type="button" class="modal-btn form" id="btn-accept"><img class="modal-ico" src="assets/ui/btn-ok.png?v=1794068400" alt=""/>接任務</button>
+          <button type="button" class="modal-btn dispatch" id="btn-dispatch"><img class="modal-ico" src="assets/ui/btn-ok.png?v=1794068400" alt=""/>派出</button>
         </div>
-        <button type="button" class="modal-close" id="modal-close" title="關閉"><img src="assets/ui/btn-back.png?v=1794068300" alt="關閉"/><span>關閉</span></button>
+        <button type="button" class="modal-close" id="modal-close" title="關閉"><img src="assets/ui/btn-back.png?v=1794068400" alt="關閉"/><span>關閉</span></button>
       </div>
     </div>
 
@@ -364,15 +364,15 @@
     </div>
         <div id="mini-map-template" hidden>
       <div class="mini-map" id="mini-map">
-        <img class="map-fog" src="assets/map/fog.png?v=1794068300" alt="" />
-        <img class="map-pin pin-town" src="assets/map/pin-town.png?v=1794068300" alt="鎮" style="left:22%;top:58%" />
-        <img class="map-pin pin-player" src="assets/map/pin-player.png?v=1794068300" alt="你" style="left:40%;top:52%" />
-        <img class="map-pin pin-quest" src="assets/map/pin-quest.png?v=1794068300" alt="委託" style="left:62%;top:36%" />
-        <img class="map-pin pin-dungeon" src="assets/map/pin-dungeon.png?v=1794068300" alt="地城" style="left:74%;top:28%" />
+        <img class="map-fog" src="assets/map/fog.png?v=1794068400" alt="" />
+        <img class="map-pin pin-town" src="assets/map/pin-town.png?v=1794068400" alt="鎮" style="left:22%;top:58%" />
+        <img class="map-pin pin-player" src="assets/map/pin-player.png?v=1794068400" alt="你" style="left:40%;top:52%" />
+        <img class="map-pin pin-quest" src="assets/map/pin-quest.png?v=1794068400" alt="委託" style="left:62%;top:36%" />
+        <img class="map-pin pin-dungeon" src="assets/map/pin-dungeon.png?v=1794068400" alt="地城" style="left:74%;top:28%" />
       </div>
     </div>
     <div class="version-tag">開羅風設計 · v2（平行）</div>
   </div>
-<script src="app.js?v=1794068300"></script>
+<script src="app.js?v=1794068400"></script>
 </body>
 </html>
