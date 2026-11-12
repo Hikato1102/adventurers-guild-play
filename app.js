@@ -110,7 +110,7 @@
 
 
 
-  const ASSET_V = '1794068000';
+  const ASSET_V = '1794068100';
 
   /* —— r20/r21：空狀態／章節／NPC／教學／活動 —— */
   const NPC_HEADS = {
@@ -1306,224 +1306,226 @@
 
   const DUNGEON_ASSETS = {
     heroes: [
-      { id: 'sword', src: 'assets/dungeon/hero-sword.png?v=1794068000', label: '劍士' },
-      { id: 'mage', src: 'assets/dungeon/hero-mage.png?v=1794068000', label: '法師' },
-      { id: 'healer', src: 'assets/dungeon/hero-healer.png?v=1794068000', label: '治療' },
-      { id: 'archer', src: 'assets/dungeon/hero-archer.png?v=1794068000', label: '弓手' },
-      { id: 'rogue', src: 'assets/dungeon/hero-rogue.png?v=1794068000', label: '盜賊' },
-      { id: 'tank', src: 'assets/dungeon/hero-tank.png?v=1794068000', label: '盾衛' },
-      { id: 'bard', src: 'assets/dungeon/hero-bard.png?v=1794068000', label: '吟遊' },
-      { id: 'spear', src: 'assets/dungeon/hero-spear.png?v=1794068000', label: '槍兵' }
+      { id: 'sword', src: 'assets/dungeon/hero-sword.png?v=1794068100', label: '劍士' },
+      { id: 'mage', src: 'assets/dungeon/hero-mage.png?v=1794068100', label: '法師' },
+      { id: 'healer', src: 'assets/dungeon/hero-healer.png?v=1794068100', label: '治療' },
+      { id: 'archer', src: 'assets/dungeon/hero-archer.png?v=1794068100', label: '弓手' },
+      { id: 'rogue', src: 'assets/dungeon/hero-rogue.png?v=1794068100', label: '盜賊' },
+      { id: 'tank', src: 'assets/dungeon/hero-tank.png?v=1794068100', label: '盾衛' },
+      { id: 'bard', src: 'assets/dungeon/hero-bard.png?v=1794068100', label: '吟遊' },
+      { id: 'spear', src: 'assets/dungeon/hero-spear.png?v=1794068100', label: '槍兵' },
+      { id: 'knight', src: 'assets/dungeon/hero-knight.png?v=1794068100', label: '女騎士希琳' },
+      { id: 'witch', src: 'assets/dungeon/hero-witch.png?v=1794068100', label: '魔女薇爾' }
     ],
     monsters: [
-      { id: 'goblin', src: 'assets/dungeon/monster-goblin.png?v=1794068000', label: '哥布林' },
-      { id: 'slime', src: 'assets/dungeon/monster-slime.png?v=1794068000', label: '史萊姆' },
-      { id: 'skeleton', src: 'assets/dungeon/monster-skeleton-r20.png?v=1794068000', label: '骷髏' },
-      { id: 'bat', src: 'assets/dungeon/monster-bat-r20.png?v=1794068000', label: '蝙蝠' },
-      { id: 'wolf', src: 'assets/dungeon/monster-wolf.png?v=1794068000', label: '狼' },
-      { id: 'mushroom', src: 'assets/dungeon/monster-mushroom-r22.png?v=1794068000', label: '毒蘑菇' },
-      { id: 'mimic', src: 'assets/dungeon/monster-mimic-r21.png?v=1794068000', label: '寶箱怪' },
-      { id: 'bee', src: 'assets/dungeon/monster-bee-r23.png?v=1794068000', label: '巨蜂' },
-      { id: 'crystal', src: 'assets/dungeon/monster-crystal.png?v=1794068000', label: '水晶怪' },
-      { id: 'rat', src: 'assets/dungeon/monster-rat.png?v=1794068000', label: '巨鼠' },
-      { id: 'ghost', src: 'assets/dungeon/monster-ghost.png?v=1794068000', label: '幽靈' },
-      { id: 'snake', src: 'assets/dungeon/monster-snake.png?v=1794068000', label: '毒蛇' },
-      { id: 'spider', src: 'assets/dungeon/monster-spider.png?v=1794068000', label: '巨蛛' },
-      { id: 'frog', src: 'assets/dungeon/monster-frog.png?v=1794068000', label: '毒蛙' },
-      { id: 'imp', src: 'assets/dungeon/monster-flameimp-r25.png?v=1794068000', label: '小惡魔' },
-      { id: 'golem', src: 'assets/dungeon/monster-golem-r21.png?v=1794068000', label: '石魔像' },
-      { id: 'jelly', src: 'assets/dungeon/monster-jelly.png?v=1794068000', label: '果凍怪' },
-      { id: 'crow', src: 'assets/dungeon/monster-crow.png?v=1794068000', label: '巨鴉' },
-      { id: 'crab', src: 'assets/dungeon/monster-crab.png?v=1794068000', label: '巨蟹' },
-      { id: 'plant', src: 'assets/dungeon/monster-plant.png?v=1794068000', label: '食人花' },
-      { id: 'bossSlime', src: 'assets/dungeon/monster-boss-slime.png?v=1794068000', label: '史萊姆王' },
-      { id: 'owl', src: 'assets/dungeon/monster-owl-r25.png?v=1794068000', label: '夜梟' },
-      { id: 'fish', src: 'assets/dungeon/monster-fish.png?v=1794068000', label: '巨魚' },
-      { id: 'mole', src: 'assets/dungeon/monster-mole-r25.png?v=1794068000', label: '鼴鼠' },
-      { id: 'turtle', src: 'assets/dungeon/monster-turtle-r23.png?v=1794068000', label: '甲龜' },
-      { id: 'fairy', src: 'assets/dungeon/monster-fairy-r21.png?v=1794068000', label: '妖精' },
-      { id: 'dragonBaby', src: 'assets/dungeon/monster-dragonling-r22.png?v=1794068000', label: '幼龍' },
-      { id: 'unicorn', src: 'assets/dungeon/monster-unicorn-r30.png?v=1794068000', label: '獨角獸' },
-      { id: 'phoenix', src: 'assets/dungeon/monster-phoenix-r29.png?v=1794068000', label: '鳳凰' },
-      { id: 'yeti', src: 'assets/dungeon/monster-yeti-r28.png?v=1794068000', label: '雪人' },
-      { id: 'beeQueen', src: 'assets/dungeon/monster-bee-queen.png?v=1794068000', label: '蜂后' },
-      { id: 'shadow', src: 'assets/dungeon/monster-shadow-r22.png?v=1794068000', label: '暗影' },
-      { id: 'knight', src: 'assets/dungeon/monster-knight.png?v=1794068000', label: '墮騎' },
-      { id: 'witch', src: 'assets/dungeon/monster-witch.png?v=1794068000', label: '女巫' },
-      { id: 'angel', src: 'assets/dungeon/monster-angel.png?v=1794068000', label: '光翼使者' },
-      { id: 'pumpkin', src: 'assets/dungeon/monster-pumpkin.png?v=1794068000', label: '南瓜精' },
-      { id: 'mimicGold', src: 'assets/dungeon/monster-mimic-gold.png?v=1794068000', label: '金寶箱怪' },
-      { id: 'slimeKing', src: 'assets/dungeon/monster-slime-king-r20.png?v=1794068000', label: '史萊姆帝王' },
-      { id: 'harpy', src: 'assets/dungeon/monster-harpy-r31.png?v=1794068000', label: '哈比' },
-      { id: 'treant', src: 'assets/dungeon/monster-treant-r29.png?v=1794068000', label: '樹人' },
-      { id: 'mermaid', src: 'assets/dungeon/monster-mermaid.png?v=1794068000', label: '人魚' },
-      { id: 'centaur', src: 'assets/dungeon/monster-centaur.png?v=1794068000', label: '半人馬' },
-      { id: 'crocodile', src: 'assets/dungeon/monster-crocodile.png?v=1794068000', label: '巨鱷' },
-      { id: 'peacock', src: 'assets/dungeon/monster-peacock.png?v=1794068000', label: '孔雀' },
-      { id: 'wraith', src: 'assets/dungeon/monster-wraith-r23.png?v=1794068000', label: '怨靈' },
-      { id: 'boar', src: 'assets/dungeon/monster-boar-r24.png?v=1794068000', label: '野豬' },
-      { id: 'serpent', src: 'assets/dungeon/monster-serpent-r24.png?v=1794068000', label: '巨蛇' },
-      { id: 'gremlin', src: 'assets/dungeon/monster-gremlin-r24.png?v=1794068000', label: '小精靈怪' },
-      { id: 'flameimp', src: 'assets/dungeon/monster-flameimp-r25.png?v=1794068000', label: '炎魔' },
-      { id: 'cactus', src: 'assets/dungeon/monster-cactus-r26.png?v=1794068000', label: '仙人掌' },
-      { id: 'penguin', src: 'assets/dungeon/monster-penguin-r26.png?v=1794068000', label: '企鵝' },
-      { id: 'lich', src: 'assets/dungeon/monster-lich-r26.png?v=1794068000', label: '巫妖' },
-      { id: 'ratking', src: 'assets/dungeon/monster-ratking-r27.png?v=1794068000', label: '鼠王' },
-      { id: 'jellyfish', src: 'assets/dungeon/monster-jellyfish-r27.png?v=1794068000', label: '水母' },
-      { id: 'gargoyle', src: 'assets/dungeon/monster-gargoyle-r27.png?v=1794068000', label: '石像鬼' },
-      { id: 'scorpion', src: 'assets/dungeon/monster-scorpion-r28.png?v=1794068000', label: '蠍子' },
-      { id: 'hydra', src: 'assets/dungeon/monster-hydra-r28.png?v=1794068000', label: '多頭蛇' },
-      { id: 'kraken', src: 'assets/dungeon/monster-kraken-r29.png?v=1794068000', label: '克拉肯' },
-      { id: 'cyclops', src: 'assets/dungeon/monster-cyclops-r30.png?v=1794068000', label: '獨眼巨人' },
-      { id: 'mandrake', src: 'assets/dungeon/monster-mandrake-r30.png?v=1794068000', label: '曼陀羅' },
-      { id: 'basilisk', src: 'assets/dungeon/monster-basilisk-r31.png?v=1794068000', label: '蛇蜥' },
-      { id: 'goblinChief', src: 'assets/dungeon/monster-goblin-chief-r31.png?v=1794068000', label: '哥布林酋長' },
-      { id: 'chimera', src: 'assets/dungeon/monster-chimera-r32.png?v=1794068000', label: '奇美拉' },
-      { id: 'naga', src: 'assets/dungeon/monster-naga-r32.png?v=1794068000', label: '娜迦' },
-      { id: 'skeletonKing', src: 'assets/dungeon/monster-skeleton-king-r32.png?v=1794068000', label: '骷髏王' },
-      { id: 'minotaur', src: 'assets/dungeon/monster-minotaur-r33.png?v=1794068000', label: '牛頭人' },
-      { id: 'dryad', src: 'assets/dungeon/monster-dryad-r33.png?v=1794068000', label: '樹精' },
-      { id: 'slimeQueen', src: 'assets/dungeon/monster-slime-queen-r33.png?v=1794068000', label: '史萊姆女王' },
-      { id: 'beholder', src: 'assets/dungeon/monster-beholder-r34.png?v=1794068000', label: '眼魔' },
-      { id: 'kitsune', src: 'assets/dungeon/monster-kitsune-r34.png?v=1794068000', label: '妖狐' },
-      { id: 'ironGolem', src: 'assets/dungeon/monster-iron-golem-r34.png?v=1794068000', label: '鐵魔像' },
-      { id: 'cerberus', src: 'assets/dungeon/monster-cerberus-r35.png?v=1794068000', label: '地獄犬' },
-      { id: 'siren', src: 'assets/dungeon/monster-siren-r35.png?v=1794068000', label: '海妖' },
-      { id: 'troll', src: 'assets/dungeon/monster-troll-r35.png?v=1794068000', label: '巨魔' },
-      { id: 'dragonAdult', src: 'assets/dungeon/monster-dragon-adult-r36.png?v=1794068000', label: '成年龍' },
-      { id: 'mummy', src: 'assets/dungeon/monster-mummy-r36.png?v=1794068000', label: '木乃伊' },
-      { id: 'pixie', src: 'assets/dungeon/monster-pixie-r36.png?v=1794068000', label: '小仙子' },
-      { id: 'wyvern', src: 'assets/dungeon/monster-wyvern-r37.png?v=1794068000', label: '飛龍' },
-      { id: 'kobold', src: 'assets/dungeon/monster-kobold-r37.png?v=1794068000', label: '狗頭人' },
-      { id: 'angelFallen', src: 'assets/dungeon/monster-angel-fallen-r37.png?v=1794068000', label: '墮天使' },
-      { id: 'leviathan', src: 'assets/dungeon/monster-leviathan-r38.png?v=1794068000', label: '利維坦' },
-      { id: 'homunculus', src: 'assets/dungeon/monster-homunculus-r38.png?v=1794068000', label: '人造人' },
-      { id: 'werewolf', src: 'assets/dungeon/monster-werewolf-r38.png?v=1794068000', label: '狼人' },
-      { id: 'griffin', src: 'assets/dungeon/monster-griffin-r39.png?v=1794068000', label: '獅鷲' },
-      { id: 'zombie', src: 'assets/dungeon/monster-zombie-r39.png?v=1794068000', label: '殭屍' },
-      { id: 'salamander', src: 'assets/dungeon/monster-salamander-r39.png?v=1794068000', label: '火蜥蜴' },
-      { id: 'bahamut', src: 'assets/dungeon/monster-bahamut-r40.png?v=1794068000', label: '巴哈姆特' },
-      { id: 'impLord', src: 'assets/dungeon/monster-imp-lord-r40.png?v=1794068000', label: '魔王小鬼' },
-      { id: 'mossSlime', src: 'assets/dungeon/monster-moss-slime-r40.png?v=1794068000', label: '苔蘚史萊姆' },
-      { id: 'earthElemental', src: 'assets/dungeon/monster-earth-elemental-r41.png?v=1794068000', label: '土元素' },
-      { id: 'frostSpider', src: 'assets/dungeon/monster-frost-spider-r41.png?v=1794068000', label: '霜蛛' },
-      { id: 'thunderBird', src: 'assets/dungeon/monster-thunder-bird-r41.png?v=1794068000', label: '雷鳥' },
-      { id: 'crystalGolem', src: 'assets/dungeon/monster-crystal-golem-r42.png?v=1794068000', label: '水晶魔像' },
-      { id: 'poisonFrog', src: 'assets/dungeon/monster-poison-frog-r42.png?v=1794068000', label: '毒蛙' },
-      { id: 'shadowCat', src: 'assets/dungeon/monster-shadow-cat-r42.png?v=1794068000', label: '影貓' },
-      { id: 'lavaSlug', src: 'assets/dungeon/monster-lava-slug-r43.png?v=1794068000', label: '熔岩蛞蝓' },
-      { id: 'iceWolf', src: 'assets/dungeon/monster-ice-wolf-r43.png?v=1794068000', label: '冰狼' },
-      { id: 'windSprite', src: 'assets/dungeon/monster-wind-sprite-r43.png?v=1794068000', label: '風精靈' },
-      { id: 'stoneTurtle', src: 'assets/dungeon/monster-stone-turtle-r44.png?v=1794068000', label: '石龜' },
-      { id: 'flameImp', src: 'assets/dungeon/monster-flame-imp-r44.png?v=1794068000', label: '炎小鬼' },
-      { id: 'mistWraith', src: 'assets/dungeon/monster-mist-wraith-r44.png?v=1794068000', label: '霧幽靈' },
-      { id: 'sandScorpion', src: 'assets/dungeon/monster-sand-scorpion-r45.png?v=1794068000', label: '沙蠍' },
-      { id: 'coralCrab', src: 'assets/dungeon/monster-coral-crab-r45.png?v=1794068000', label: '珊瑚蟹' },
-      { id: 'thunderBoar', src: 'assets/dungeon/monster-thunder-boar-r45.png?v=1794068000', label: '雷野豬' },
-      { id: 'vineSnake', src: 'assets/dungeon/monster-vine-snake-r46.png?v=1794068000', label: '藤蛇' },
-      { id: 'caveBatking', src: 'assets/dungeon/monster-cave-batking-r46.png?v=1794068000', label: '洞窟蝠王' },
-      { id: 'ruinGolem', src: 'assets/dungeon/monster-ruin-golem-r46.png?v=1794068000', label: '遺跡魔像' },
-      { id: 'jellyBlob', src: 'assets/dungeon/monster-jelly-blob-r47.png?v=1794068000', label: '果凍怪' },
-      { id: 'mushroomSpore', src: 'assets/dungeon/monster-mushroom-spore-r47.png?v=1794068000', label: '蘑菇孢子' },
-      { id: 'candyMimic', src: 'assets/dungeon/monster-candy-mimic-r47.png?v=1794068000', label: '糖果擬態' },
-      { id: 'ironKnight', src: 'assets/dungeon/monster-iron-knight-r48.png?v=1794068000', label: '鐵騎士' },
-      { id: 'armorMimic', src: 'assets/dungeon/monster-armor-mimic-r48.png?v=1794068000', label: '鎧甲擬態' },
-      { id: 'gemSprite', src: 'assets/dungeon/monster-gem-sprite-r48.png?v=1794068000', label: '寶石精靈' },
-      { id: 'banditChief', src: 'assets/dungeon/monster-bandit-chief-r49.png?v=1794068000', label: '盜賊首領' },
-      { id: 'darkMage', src: 'assets/dungeon/monster-dark-mage-r49.png?v=1794068000', label: '黑魔導' },
-      { id: 'plagueRat', src: 'assets/dungeon/monster-plague-rat-r49.png?v=1794068000', label: '瘟疫鼠' },
-      { id: 'paperGolem', src: 'assets/dungeon/monster-paper-golem-r50.png?v=1794068000', label: '紙魔像' },
-      { id: 'bellSpirit', src: 'assets/dungeon/monster-bell-spirit-r50.png?v=1794068000', label: '鐘靈' },
-      { id: 'festivalMask', src: 'assets/dungeon/monster-festival-mask-r50.png?v=1794068000', label: '祭典面具怪' },
-      { id: 'scarecrow', src: 'assets/dungeon/monster-scarecrow-r51.png?v=1794068000', label: '稻草人' },
-      { id: 'rainSlime', src: 'assets/dungeon/monster-rain-slime-r51.png?v=1794068000', label: '雨史萊姆' },
-      { id: 'frostHare', src: 'assets/dungeon/monster-frost-hare-r51.png?v=1794068000', label: '霜兔' },
-      { id: 'feralHound', src: 'assets/dungeon/monster-feral-hound-r52.png?v=1794068000', label: '野犬' },
-      { id: 'strayCat', src: 'assets/dungeon/monster-stray-cat-r52.png?v=1794068000', label: '流浪貓' },
-      { id: 'petMimic', src: 'assets/dungeon/monster-pet-mimic-r52.png?v=1794068000', label: '寵物擬態' },
-      { id: 'echoBanshee', src: 'assets/dungeon/monster-echo-banshee-r53.png?v=1794068000', label: '回音報喪女妖' },
-      { id: 'drumGolem', src: 'assets/dungeon/monster-drum-golem-r53.png?v=1794068000', label: '鼓魔像' },
-      { id: 'curtainMimic', src: 'assets/dungeon/monster-curtain-mimic-r53.png?v=1794068000', label: '幕簾擬態' },
-      { id: 'riverSerpent', src: 'assets/dungeon/monster-river-serpent-r54.png?v=1794068000', label: '河蛇' },
-      { id: 'roadBandit', src: 'assets/dungeon/monster-road-bandit-r54.png?v=1794068000', label: '路匪' },
-      { id: 'skyPiranha', src: 'assets/dungeon/monster-sky-piranha-r54.png?v=1794068000', label: '飛天食人魚' },
-      { id: 'treasureMimic', src: 'assets/dungeon/monster-treasure-mimic-r55.png?v=1794068000', label: '寶箱擬態' },
-      { id: 'goldBeetle', src: 'assets/dungeon/monster-gold-beetle-r55.png?v=1794068000', label: '金甲蟲' },
-      { id: 'jewelDrake', src: 'assets/dungeon/monster-jewel-drake-r55.png?v=1794068000', label: '珠寶幼龍' },
-      { id: 'clockworkOwl', src: 'assets/dungeon/monster-clockwork-owl-r56.png?v=1794068000', label: '發條貓頭鷹' },
-      { id: 'shadowBat', src: 'assets/dungeon/monster-shadow-bat-r56.png?v=1794068000', label: '影蝠' },
-      { id: 'ledgerGolem', src: 'assets/dungeon/monster-ledger-golem-r56.png?v=1794068000', label: '帳簿魔像' },
-      { id: 'bladeWraith', src: 'assets/dungeon/monster-blade-wraith-r57.png?v=1794068000', label: '刀刃怨靈' },
-      { id: 'healMimic', src: 'assets/dungeon/monster-heal-mimic-r57.png?v=1794068000', label: '治療擬態' },
-      { id: 'barrierGolem', src: 'assets/dungeon/monster-barrier-golem-r57.png?v=1794068000', label: '結界魔像' },
-      { id: 'poisonToad', src: 'assets/dungeon/monster-poison-toad-r58.png?v=1794068000', label: '毒蟾蜍' },
-      { id: 'emberFox', src: 'assets/dungeon/monster-ember-fox-r58.png?v=1794068000', label: '餘燼狐' },
-      { id: 'frostCrab', src: 'assets/dungeon/monster-frost-crab-r58.png?v=1794068000', label: '霜蟹' },
-      { id: 'arenaChamp', src: 'assets/dungeon/monster-arena-champ-r59.png?v=1794068000', label: '競技場冠軍' },
-      { id: 'trophyMimic', src: 'assets/dungeon/monster-trophy-mimic-r59.png?v=1794068000', label: '獎盃擬態' },
-      { id: 'fanSpirit', src: 'assets/dungeon/monster-fan-spirit-r59.png?v=1794068000', label: '粉絲精靈' },
-      { id: 'wordWisp', src: 'assets/dungeon/monster-word-wisp-r60.png?v=1794068000', label: '文字幽焰' },
-      { id: 'inkSlime', src: 'assets/dungeon/monster-ink-slime-r60.png?v=1794068000', label: '墨汁史萊姆' },
-      { id: 'echoParrot', src: 'assets/dungeon/monster-echo-parrot-r60.png?v=1794068000', label: '回聲鸚鵡' },
-      { id: 'gateGolem', src: 'assets/dungeon/monster-gate-golem-r61.png?v=1794068000', label: '門扉魔像' },
-      { id: 'crateMimic', src: 'assets/dungeon/monster-crate-mimic-r61.png?v=1794068000', label: '木箱擬態' },
-      { id: 'compassWisp', src: 'assets/dungeon/monster-compass-wisp-r61.png?v=1794068000', label: '羅盤幽焰' },
-      { id: 'bagMimic', src: 'assets/dungeon/monster-bag-mimic-r62.png?v=1794068000', label: '背包擬態' },
-      { id: 'lockSpecter', src: 'assets/dungeon/monster-lock-specter-r62.png?v=1794068000', label: '鎖靈幽靈' },
-      { id: 'coinSwarm', src: 'assets/dungeon/monster-coin-swarm-r62.png?v=1794068000', label: '金幣蟲群' },
-      { id: 'critBlade', src: 'assets/dungeon/monster-crit-blade-r63.png?v=1794068000', label: '暴擊刃靈' },
-      { id: 'healBloom', src: 'assets/dungeon/monster-heal-bloom-r63.png?v=1794068000', label: '治療花苞' },
-      { id: 'shieldTurtle', src: 'assets/dungeon/monster-shield-turtle-r63.png?v=1794068000', label: '盾甲巨龜' },
-      { id: 'gearGolem', src: 'assets/dungeon/monster-gear-golem-r64.png?v=1794068000', label: '齒輪魔像' },
-      { id: 'noiseImp', src: 'assets/dungeon/monster-noise-imp-r64.png?v=1794068000', label: '噪音小惡魔' },
-      { id: 'scrollWraith', src: 'assets/dungeon/monster-scroll-wraith-r64.png?v=1794068000', label: '卷軸怨靈' },
-      { id: 'emptyChest', src: 'assets/dungeon/monster-empty-chest-r65.png?v=1794068000', label: '空箱怪' },
-      { id: 'arrowImp', src: 'assets/dungeon/monster-arrow-imp-r65.png?v=1794068000', label: '箭頭小惡魔' },
-      { id: 'tutorialSlime', src: 'assets/dungeon/monster-tutorial-slime-r65.png?v=1794068000', label: '教學史萊姆' },
-      { id: 'blossomSprite', src: 'assets/dungeon/monster-blossom-sprite-r66.png?v=1794068000', label: '花瓣精靈' },
-      { id: 'sunScarab', src: 'assets/dungeon/monster-sun-scarab-r66.png?v=1794068000', label: '太陽聖甲蟲' },
-      { id: 'leafWyrm', src: 'assets/dungeon/monster-leaf-wyrm-r66.png?v=1794068000', label: '楓葉幼龍' },
-      { id: 'snowman', src: 'assets/dungeon/monster-snowman-r67.png?v=1794068000', label: '雪人' },
-      { id: 'lanternFish', src: 'assets/dungeon/monster-lantern-fish-r67.png?v=1794068000', label: '燈籠魚' },
-      { id: 'steamSpirit', src: 'assets/dungeon/monster-steam-spirit-r67.png?v=1794068000', label: '蒸汽精魂' },
-      { id: 'brickGolem', src: 'assets/dungeon/monster-brick-golem-r68.png?v=1794068000', label: '磚石魔像' },
-      { id: 'bedMimic', src: 'assets/dungeon/monster-bed-mimic-r68.png?v=1794068000', label: '床鋪擬態' },
-      { id: 'priceTagImp', src: 'assets/dungeon/monster-price-tag-imp-r68.png?v=1794068000', label: '價錢牌小惡魔' },
-      { id: 'fireSprite', src: 'assets/dungeon/monster-fire-sprite-r69.png?v=1794068000', label: '火焰精靈' },
-      { id: 'waterNymph', src: 'assets/dungeon/monster-water-nymph-r69.png?v=1794068000', label: '水之寧芙' },
-      { id: 'windHarpy', src: 'assets/dungeon/monster-wind-harpy-r69.png?v=1794068000', label: '風哈比' },
-      { id: 'earthMole', src: 'assets/dungeon/monster-earth-mole-r70.png?v=1794068000', label: '土鼴鼠' },
-      { id: 'lightMoth', src: 'assets/dungeon/monster-light-moth-r70.png?v=1794068000', label: '光飛蛾' },
-      { id: 'darkRaven', src: 'assets/dungeon/monster-dark-raven-r70.png?v=1794068000', label: '暗鴉' },
-      { id: 'trophyKnight', src: 'assets/dungeon/monster-trophy-knight-r71.png?v=1794068000', label: '獎盃騎士' },
-      { id: 'coinDragon', src: 'assets/dungeon/monster-coin-dragon-r71.png?v=1794068000', label: '金幣龍' },
-      { id: 'scrollDragon', src: 'assets/dungeon/monster-scroll-dragon-r71.png?v=1794068000', label: '卷軸龍' },
-      { id: 'calendarImp', src: 'assets/dungeon/monster-calendar-imp-r72.png?v=1794068000', label: '日曆小鬼' },
-      { id: 'heartSlime', src: 'assets/dungeon/monster-heart-slime-r72.png?v=1794068000', label: '愛心史萊姆' },
-      { id: 'giftMimic', src: 'assets/dungeon/monster-gift-mimic-r72.png?v=1794068000', label: '禮物寶箱怪' },
-      { id: 'riverFish', src: 'assets/dungeon/monster-river-fish-r73.png?v=1794068000', label: '河魚' },
-      { id: 'oreGolem', src: 'assets/dungeon/monster-ore-golem-r73.png?v=1794068000', label: '礦石魔像' },
-      { id: 'pickaxeImp', src: 'assets/dungeon/monster-pickaxe-imp-r73.png?v=1794068000', label: '礦鎬小鬼' },
-      { id: 'slimeFlask', src: 'assets/dungeon/monster-slime-flask-r74.png?v=1794068000', label: '燒瓶史萊姆' },
-      { id: 'cauldronImp', src: 'assets/dungeon/monster-cauldron-imp-r74.png?v=1794068000', label: '藥鍋小鬼' },
-      { id: 'herbSprite', src: 'assets/dungeon/monster-herb-sprite-r74.png?v=1794068000', label: '藥草精靈' },
-      { id: 'madChick', src: 'assets/dungeon/monster-mad-chick-r75.png?v=1794068000', label: '狂小雞' },
-      { id: 'woolSheep', src: 'assets/dungeon/monster-wool-sheep-r75.png?v=1794068000', label: '羊毛羊' }
+      { id: 'goblin', src: 'assets/dungeon/monster-goblin.png?v=1794068100', label: '哥布林' },
+      { id: 'slime', src: 'assets/dungeon/monster-slime.png?v=1794068100', label: '史萊姆' },
+      { id: 'skeleton', src: 'assets/dungeon/monster-skeleton-r20.png?v=1794068100', label: '骷髏' },
+      { id: 'bat', src: 'assets/dungeon/monster-bat-r20.png?v=1794068100', label: '蝙蝠' },
+      { id: 'wolf', src: 'assets/dungeon/monster-wolf.png?v=1794068100', label: '狼' },
+      { id: 'mushroom', src: 'assets/dungeon/monster-mushroom-r22.png?v=1794068100', label: '毒蘑菇' },
+      { id: 'mimic', src: 'assets/dungeon/monster-mimic-r21.png?v=1794068100', label: '寶箱怪' },
+      { id: 'bee', src: 'assets/dungeon/monster-bee-r23.png?v=1794068100', label: '巨蜂' },
+      { id: 'crystal', src: 'assets/dungeon/monster-crystal.png?v=1794068100', label: '水晶怪' },
+      { id: 'rat', src: 'assets/dungeon/monster-rat.png?v=1794068100', label: '巨鼠' },
+      { id: 'ghost', src: 'assets/dungeon/monster-ghost.png?v=1794068100', label: '幽靈' },
+      { id: 'snake', src: 'assets/dungeon/monster-snake.png?v=1794068100', label: '毒蛇' },
+      { id: 'spider', src: 'assets/dungeon/monster-spider.png?v=1794068100', label: '巨蛛' },
+      { id: 'frog', src: 'assets/dungeon/monster-frog.png?v=1794068100', label: '毒蛙' },
+      { id: 'imp', src: 'assets/dungeon/monster-flameimp-r25.png?v=1794068100', label: '小惡魔' },
+      { id: 'golem', src: 'assets/dungeon/monster-golem-r21.png?v=1794068100', label: '石魔像' },
+      { id: 'jelly', src: 'assets/dungeon/monster-jelly.png?v=1794068100', label: '果凍怪' },
+      { id: 'crow', src: 'assets/dungeon/monster-crow.png?v=1794068100', label: '巨鴉' },
+      { id: 'crab', src: 'assets/dungeon/monster-crab.png?v=1794068100', label: '巨蟹' },
+      { id: 'plant', src: 'assets/dungeon/monster-plant.png?v=1794068100', label: '食人花' },
+      { id: 'bossSlime', src: 'assets/dungeon/monster-boss-slime.png?v=1794068100', label: '史萊姆王' },
+      { id: 'owl', src: 'assets/dungeon/monster-owl-r25.png?v=1794068100', label: '夜梟' },
+      { id: 'fish', src: 'assets/dungeon/monster-fish.png?v=1794068100', label: '巨魚' },
+      { id: 'mole', src: 'assets/dungeon/monster-mole-r25.png?v=1794068100', label: '鼴鼠' },
+      { id: 'turtle', src: 'assets/dungeon/monster-turtle-r23.png?v=1794068100', label: '甲龜' },
+      { id: 'fairy', src: 'assets/dungeon/monster-fairy-r21.png?v=1794068100', label: '妖精' },
+      { id: 'dragonBaby', src: 'assets/dungeon/monster-dragonling-r22.png?v=1794068100', label: '幼龍' },
+      { id: 'unicorn', src: 'assets/dungeon/monster-unicorn-r30.png?v=1794068100', label: '獨角獸' },
+      { id: 'phoenix', src: 'assets/dungeon/monster-phoenix-r29.png?v=1794068100', label: '鳳凰' },
+      { id: 'yeti', src: 'assets/dungeon/monster-yeti-r28.png?v=1794068100', label: '雪人' },
+      { id: 'beeQueen', src: 'assets/dungeon/monster-bee-queen.png?v=1794068100', label: '蜂后' },
+      { id: 'shadow', src: 'assets/dungeon/monster-shadow-r22.png?v=1794068100', label: '暗影' },
+      { id: 'knight', src: 'assets/dungeon/monster-knight.png?v=1794068100', label: '墮騎' },
+      { id: 'witch', src: 'assets/dungeon/monster-witch.png?v=1794068100', label: '女巫' },
+      { id: 'angel', src: 'assets/dungeon/monster-angel.png?v=1794068100', label: '光翼使者' },
+      { id: 'pumpkin', src: 'assets/dungeon/monster-pumpkin.png?v=1794068100', label: '南瓜精' },
+      { id: 'mimicGold', src: 'assets/dungeon/monster-mimic-gold.png?v=1794068100', label: '金寶箱怪' },
+      { id: 'slimeKing', src: 'assets/dungeon/monster-slime-king-r20.png?v=1794068100', label: '史萊姆帝王' },
+      { id: 'harpy', src: 'assets/dungeon/monster-harpy-r31.png?v=1794068100', label: '哈比' },
+      { id: 'treant', src: 'assets/dungeon/monster-treant-r29.png?v=1794068100', label: '樹人' },
+      { id: 'mermaid', src: 'assets/dungeon/monster-mermaid.png?v=1794068100', label: '人魚' },
+      { id: 'centaur', src: 'assets/dungeon/monster-centaur.png?v=1794068100', label: '半人馬' },
+      { id: 'crocodile', src: 'assets/dungeon/monster-crocodile.png?v=1794068100', label: '巨鱷' },
+      { id: 'peacock', src: 'assets/dungeon/monster-peacock.png?v=1794068100', label: '孔雀' },
+      { id: 'wraith', src: 'assets/dungeon/monster-wraith-r23.png?v=1794068100', label: '怨靈' },
+      { id: 'boar', src: 'assets/dungeon/monster-boar-r24.png?v=1794068100', label: '野豬' },
+      { id: 'serpent', src: 'assets/dungeon/monster-serpent-r24.png?v=1794068100', label: '巨蛇' },
+      { id: 'gremlin', src: 'assets/dungeon/monster-gremlin-r24.png?v=1794068100', label: '小精靈怪' },
+      { id: 'flameimp', src: 'assets/dungeon/monster-flameimp-r25.png?v=1794068100', label: '炎魔' },
+      { id: 'cactus', src: 'assets/dungeon/monster-cactus-r26.png?v=1794068100', label: '仙人掌' },
+      { id: 'penguin', src: 'assets/dungeon/monster-penguin-r26.png?v=1794068100', label: '企鵝' },
+      { id: 'lich', src: 'assets/dungeon/monster-lich-r26.png?v=1794068100', label: '巫妖' },
+      { id: 'ratking', src: 'assets/dungeon/monster-ratking-r27.png?v=1794068100', label: '鼠王' },
+      { id: 'jellyfish', src: 'assets/dungeon/monster-jellyfish-r27.png?v=1794068100', label: '水母' },
+      { id: 'gargoyle', src: 'assets/dungeon/monster-gargoyle-r27.png?v=1794068100', label: '石像鬼' },
+      { id: 'scorpion', src: 'assets/dungeon/monster-scorpion-r28.png?v=1794068100', label: '蠍子' },
+      { id: 'hydra', src: 'assets/dungeon/monster-hydra-r28.png?v=1794068100', label: '多頭蛇' },
+      { id: 'kraken', src: 'assets/dungeon/monster-kraken-r29.png?v=1794068100', label: '克拉肯' },
+      { id: 'cyclops', src: 'assets/dungeon/monster-cyclops-r30.png?v=1794068100', label: '獨眼巨人' },
+      { id: 'mandrake', src: 'assets/dungeon/monster-mandrake-r30.png?v=1794068100', label: '曼陀羅' },
+      { id: 'basilisk', src: 'assets/dungeon/monster-basilisk-r31.png?v=1794068100', label: '蛇蜥' },
+      { id: 'goblinChief', src: 'assets/dungeon/monster-goblin-chief-r31.png?v=1794068100', label: '哥布林酋長' },
+      { id: 'chimera', src: 'assets/dungeon/monster-chimera-r32.png?v=1794068100', label: '奇美拉' },
+      { id: 'naga', src: 'assets/dungeon/monster-naga-r32.png?v=1794068100', label: '娜迦' },
+      { id: 'skeletonKing', src: 'assets/dungeon/monster-skeleton-king-r32.png?v=1794068100', label: '骷髏王' },
+      { id: 'minotaur', src: 'assets/dungeon/monster-minotaur-r33.png?v=1794068100', label: '牛頭人' },
+      { id: 'dryad', src: 'assets/dungeon/monster-dryad-r33.png?v=1794068100', label: '樹精' },
+      { id: 'slimeQueen', src: 'assets/dungeon/monster-slime-queen-r33.png?v=1794068100', label: '史萊姆女王' },
+      { id: 'beholder', src: 'assets/dungeon/monster-beholder-r34.png?v=1794068100', label: '眼魔' },
+      { id: 'kitsune', src: 'assets/dungeon/monster-kitsune-r34.png?v=1794068100', label: '妖狐' },
+      { id: 'ironGolem', src: 'assets/dungeon/monster-iron-golem-r34.png?v=1794068100', label: '鐵魔像' },
+      { id: 'cerberus', src: 'assets/dungeon/monster-cerberus-r35.png?v=1794068100', label: '地獄犬' },
+      { id: 'siren', src: 'assets/dungeon/monster-siren-r35.png?v=1794068100', label: '海妖' },
+      { id: 'troll', src: 'assets/dungeon/monster-troll-r35.png?v=1794068100', label: '巨魔' },
+      { id: 'dragonAdult', src: 'assets/dungeon/monster-dragon-adult-r36.png?v=1794068100', label: '成年龍' },
+      { id: 'mummy', src: 'assets/dungeon/monster-mummy-r36.png?v=1794068100', label: '木乃伊' },
+      { id: 'pixie', src: 'assets/dungeon/monster-pixie-r36.png?v=1794068100', label: '小仙子' },
+      { id: 'wyvern', src: 'assets/dungeon/monster-wyvern-r37.png?v=1794068100', label: '飛龍' },
+      { id: 'kobold', src: 'assets/dungeon/monster-kobold-r37.png?v=1794068100', label: '狗頭人' },
+      { id: 'angelFallen', src: 'assets/dungeon/monster-angel-fallen-r37.png?v=1794068100', label: '墮天使' },
+      { id: 'leviathan', src: 'assets/dungeon/monster-leviathan-r38.png?v=1794068100', label: '利維坦' },
+      { id: 'homunculus', src: 'assets/dungeon/monster-homunculus-r38.png?v=1794068100', label: '人造人' },
+      { id: 'werewolf', src: 'assets/dungeon/monster-werewolf-r38.png?v=1794068100', label: '狼人' },
+      { id: 'griffin', src: 'assets/dungeon/monster-griffin-r39.png?v=1794068100', label: '獅鷲' },
+      { id: 'zombie', src: 'assets/dungeon/monster-zombie-r39.png?v=1794068100', label: '殭屍' },
+      { id: 'salamander', src: 'assets/dungeon/monster-salamander-r39.png?v=1794068100', label: '火蜥蜴' },
+      { id: 'bahamut', src: 'assets/dungeon/monster-bahamut-r40.png?v=1794068100', label: '巴哈姆特' },
+      { id: 'impLord', src: 'assets/dungeon/monster-imp-lord-r40.png?v=1794068100', label: '魔王小鬼' },
+      { id: 'mossSlime', src: 'assets/dungeon/monster-moss-slime-r40.png?v=1794068100', label: '苔蘚史萊姆' },
+      { id: 'earthElemental', src: 'assets/dungeon/monster-earth-elemental-r41.png?v=1794068100', label: '土元素' },
+      { id: 'frostSpider', src: 'assets/dungeon/monster-frost-spider-r41.png?v=1794068100', label: '霜蛛' },
+      { id: 'thunderBird', src: 'assets/dungeon/monster-thunder-bird-r41.png?v=1794068100', label: '雷鳥' },
+      { id: 'crystalGolem', src: 'assets/dungeon/monster-crystal-golem-r42.png?v=1794068100', label: '水晶魔像' },
+      { id: 'poisonFrog', src: 'assets/dungeon/monster-poison-frog-r42.png?v=1794068100', label: '毒蛙' },
+      { id: 'shadowCat', src: 'assets/dungeon/monster-shadow-cat-r42.png?v=1794068100', label: '影貓' },
+      { id: 'lavaSlug', src: 'assets/dungeon/monster-lava-slug-r43.png?v=1794068100', label: '熔岩蛞蝓' },
+      { id: 'iceWolf', src: 'assets/dungeon/monster-ice-wolf-r43.png?v=1794068100', label: '冰狼' },
+      { id: 'windSprite', src: 'assets/dungeon/monster-wind-sprite-r43.png?v=1794068100', label: '風精靈' },
+      { id: 'stoneTurtle', src: 'assets/dungeon/monster-stone-turtle-r44.png?v=1794068100', label: '石龜' },
+      { id: 'flameImp', src: 'assets/dungeon/monster-flame-imp-r44.png?v=1794068100', label: '炎小鬼' },
+      { id: 'mistWraith', src: 'assets/dungeon/monster-mist-wraith-r44.png?v=1794068100', label: '霧幽靈' },
+      { id: 'sandScorpion', src: 'assets/dungeon/monster-sand-scorpion-r45.png?v=1794068100', label: '沙蠍' },
+      { id: 'coralCrab', src: 'assets/dungeon/monster-coral-crab-r45.png?v=1794068100', label: '珊瑚蟹' },
+      { id: 'thunderBoar', src: 'assets/dungeon/monster-thunder-boar-r45.png?v=1794068100', label: '雷野豬' },
+      { id: 'vineSnake', src: 'assets/dungeon/monster-vine-snake-r46.png?v=1794068100', label: '藤蛇' },
+      { id: 'caveBatking', src: 'assets/dungeon/monster-cave-batking-r46.png?v=1794068100', label: '洞窟蝠王' },
+      { id: 'ruinGolem', src: 'assets/dungeon/monster-ruin-golem-r46.png?v=1794068100', label: '遺跡魔像' },
+      { id: 'jellyBlob', src: 'assets/dungeon/monster-jelly-blob-r47.png?v=1794068100', label: '果凍怪' },
+      { id: 'mushroomSpore', src: 'assets/dungeon/monster-mushroom-spore-r47.png?v=1794068100', label: '蘑菇孢子' },
+      { id: 'candyMimic', src: 'assets/dungeon/monster-candy-mimic-r47.png?v=1794068100', label: '糖果擬態' },
+      { id: 'ironKnight', src: 'assets/dungeon/monster-iron-knight-r48.png?v=1794068100', label: '鐵騎士' },
+      { id: 'armorMimic', src: 'assets/dungeon/monster-armor-mimic-r48.png?v=1794068100', label: '鎧甲擬態' },
+      { id: 'gemSprite', src: 'assets/dungeon/monster-gem-sprite-r48.png?v=1794068100', label: '寶石精靈' },
+      { id: 'banditChief', src: 'assets/dungeon/monster-bandit-chief-r49.png?v=1794068100', label: '盜賊首領' },
+      { id: 'darkMage', src: 'assets/dungeon/monster-dark-mage-r49.png?v=1794068100', label: '黑魔導' },
+      { id: 'plagueRat', src: 'assets/dungeon/monster-plague-rat-r49.png?v=1794068100', label: '瘟疫鼠' },
+      { id: 'paperGolem', src: 'assets/dungeon/monster-paper-golem-r50.png?v=1794068100', label: '紙魔像' },
+      { id: 'bellSpirit', src: 'assets/dungeon/monster-bell-spirit-r50.png?v=1794068100', label: '鐘靈' },
+      { id: 'festivalMask', src: 'assets/dungeon/monster-festival-mask-r50.png?v=1794068100', label: '祭典面具怪' },
+      { id: 'scarecrow', src: 'assets/dungeon/monster-scarecrow-r51.png?v=1794068100', label: '稻草人' },
+      { id: 'rainSlime', src: 'assets/dungeon/monster-rain-slime-r51.png?v=1794068100', label: '雨史萊姆' },
+      { id: 'frostHare', src: 'assets/dungeon/monster-frost-hare-r51.png?v=1794068100', label: '霜兔' },
+      { id: 'feralHound', src: 'assets/dungeon/monster-feral-hound-r52.png?v=1794068100', label: '野犬' },
+      { id: 'strayCat', src: 'assets/dungeon/monster-stray-cat-r52.png?v=1794068100', label: '流浪貓' },
+      { id: 'petMimic', src: 'assets/dungeon/monster-pet-mimic-r52.png?v=1794068100', label: '寵物擬態' },
+      { id: 'echoBanshee', src: 'assets/dungeon/monster-echo-banshee-r53.png?v=1794068100', label: '回音報喪女妖' },
+      { id: 'drumGolem', src: 'assets/dungeon/monster-drum-golem-r53.png?v=1794068100', label: '鼓魔像' },
+      { id: 'curtainMimic', src: 'assets/dungeon/monster-curtain-mimic-r53.png?v=1794068100', label: '幕簾擬態' },
+      { id: 'riverSerpent', src: 'assets/dungeon/monster-river-serpent-r54.png?v=1794068100', label: '河蛇' },
+      { id: 'roadBandit', src: 'assets/dungeon/monster-road-bandit-r54.png?v=1794068100', label: '路匪' },
+      { id: 'skyPiranha', src: 'assets/dungeon/monster-sky-piranha-r54.png?v=1794068100', label: '飛天食人魚' },
+      { id: 'treasureMimic', src: 'assets/dungeon/monster-treasure-mimic-r55.png?v=1794068100', label: '寶箱擬態' },
+      { id: 'goldBeetle', src: 'assets/dungeon/monster-gold-beetle-r55.png?v=1794068100', label: '金甲蟲' },
+      { id: 'jewelDrake', src: 'assets/dungeon/monster-jewel-drake-r55.png?v=1794068100', label: '珠寶幼龍' },
+      { id: 'clockworkOwl', src: 'assets/dungeon/monster-clockwork-owl-r56.png?v=1794068100', label: '發條貓頭鷹' },
+      { id: 'shadowBat', src: 'assets/dungeon/monster-shadow-bat-r56.png?v=1794068100', label: '影蝠' },
+      { id: 'ledgerGolem', src: 'assets/dungeon/monster-ledger-golem-r56.png?v=1794068100', label: '帳簿魔像' },
+      { id: 'bladeWraith', src: 'assets/dungeon/monster-blade-wraith-r57.png?v=1794068100', label: '刀刃怨靈' },
+      { id: 'healMimic', src: 'assets/dungeon/monster-heal-mimic-r57.png?v=1794068100', label: '治療擬態' },
+      { id: 'barrierGolem', src: 'assets/dungeon/monster-barrier-golem-r57.png?v=1794068100', label: '結界魔像' },
+      { id: 'poisonToad', src: 'assets/dungeon/monster-poison-toad-r58.png?v=1794068100', label: '毒蟾蜍' },
+      { id: 'emberFox', src: 'assets/dungeon/monster-ember-fox-r58.png?v=1794068100', label: '餘燼狐' },
+      { id: 'frostCrab', src: 'assets/dungeon/monster-frost-crab-r58.png?v=1794068100', label: '霜蟹' },
+      { id: 'arenaChamp', src: 'assets/dungeon/monster-arena-champ-r59.png?v=1794068100', label: '競技場冠軍' },
+      { id: 'trophyMimic', src: 'assets/dungeon/monster-trophy-mimic-r59.png?v=1794068100', label: '獎盃擬態' },
+      { id: 'fanSpirit', src: 'assets/dungeon/monster-fan-spirit-r59.png?v=1794068100', label: '粉絲精靈' },
+      { id: 'wordWisp', src: 'assets/dungeon/monster-word-wisp-r60.png?v=1794068100', label: '文字幽焰' },
+      { id: 'inkSlime', src: 'assets/dungeon/monster-ink-slime-r60.png?v=1794068100', label: '墨汁史萊姆' },
+      { id: 'echoParrot', src: 'assets/dungeon/monster-echo-parrot-r60.png?v=1794068100', label: '回聲鸚鵡' },
+      { id: 'gateGolem', src: 'assets/dungeon/monster-gate-golem-r61.png?v=1794068100', label: '門扉魔像' },
+      { id: 'crateMimic', src: 'assets/dungeon/monster-crate-mimic-r61.png?v=1794068100', label: '木箱擬態' },
+      { id: 'compassWisp', src: 'assets/dungeon/monster-compass-wisp-r61.png?v=1794068100', label: '羅盤幽焰' },
+      { id: 'bagMimic', src: 'assets/dungeon/monster-bag-mimic-r62.png?v=1794068100', label: '背包擬態' },
+      { id: 'lockSpecter', src: 'assets/dungeon/monster-lock-specter-r62.png?v=1794068100', label: '鎖靈幽靈' },
+      { id: 'coinSwarm', src: 'assets/dungeon/monster-coin-swarm-r62.png?v=1794068100', label: '金幣蟲群' },
+      { id: 'critBlade', src: 'assets/dungeon/monster-crit-blade-r63.png?v=1794068100', label: '暴擊刃靈' },
+      { id: 'healBloom', src: 'assets/dungeon/monster-heal-bloom-r63.png?v=1794068100', label: '治療花苞' },
+      { id: 'shieldTurtle', src: 'assets/dungeon/monster-shield-turtle-r63.png?v=1794068100', label: '盾甲巨龜' },
+      { id: 'gearGolem', src: 'assets/dungeon/monster-gear-golem-r64.png?v=1794068100', label: '齒輪魔像' },
+      { id: 'noiseImp', src: 'assets/dungeon/monster-noise-imp-r64.png?v=1794068100', label: '噪音小惡魔' },
+      { id: 'scrollWraith', src: 'assets/dungeon/monster-scroll-wraith-r64.png?v=1794068100', label: '卷軸怨靈' },
+      { id: 'emptyChest', src: 'assets/dungeon/monster-empty-chest-r65.png?v=1794068100', label: '空箱怪' },
+      { id: 'arrowImp', src: 'assets/dungeon/monster-arrow-imp-r65.png?v=1794068100', label: '箭頭小惡魔' },
+      { id: 'tutorialSlime', src: 'assets/dungeon/monster-tutorial-slime-r65.png?v=1794068100', label: '教學史萊姆' },
+      { id: 'blossomSprite', src: 'assets/dungeon/monster-blossom-sprite-r66.png?v=1794068100', label: '花瓣精靈' },
+      { id: 'sunScarab', src: 'assets/dungeon/monster-sun-scarab-r66.png?v=1794068100', label: '太陽聖甲蟲' },
+      { id: 'leafWyrm', src: 'assets/dungeon/monster-leaf-wyrm-r66.png?v=1794068100', label: '楓葉幼龍' },
+      { id: 'snowman', src: 'assets/dungeon/monster-snowman-r67.png?v=1794068100', label: '雪人' },
+      { id: 'lanternFish', src: 'assets/dungeon/monster-lantern-fish-r67.png?v=1794068100', label: '燈籠魚' },
+      { id: 'steamSpirit', src: 'assets/dungeon/monster-steam-spirit-r67.png?v=1794068100', label: '蒸汽精魂' },
+      { id: 'brickGolem', src: 'assets/dungeon/monster-brick-golem-r68.png?v=1794068100', label: '磚石魔像' },
+      { id: 'bedMimic', src: 'assets/dungeon/monster-bed-mimic-r68.png?v=1794068100', label: '床鋪擬態' },
+      { id: 'priceTagImp', src: 'assets/dungeon/monster-price-tag-imp-r68.png?v=1794068100', label: '價錢牌小惡魔' },
+      { id: 'fireSprite', src: 'assets/dungeon/monster-fire-sprite-r69.png?v=1794068100', label: '火焰精靈' },
+      { id: 'waterNymph', src: 'assets/dungeon/monster-water-nymph-r69.png?v=1794068100', label: '水之寧芙' },
+      { id: 'windHarpy', src: 'assets/dungeon/monster-wind-harpy-r69.png?v=1794068100', label: '風哈比' },
+      { id: 'earthMole', src: 'assets/dungeon/monster-earth-mole-r70.png?v=1794068100', label: '土鼴鼠' },
+      { id: 'lightMoth', src: 'assets/dungeon/monster-light-moth-r70.png?v=1794068100', label: '光飛蛾' },
+      { id: 'darkRaven', src: 'assets/dungeon/monster-dark-raven-r70.png?v=1794068100', label: '暗鴉' },
+      { id: 'trophyKnight', src: 'assets/dungeon/monster-trophy-knight-r71.png?v=1794068100', label: '獎盃騎士' },
+      { id: 'coinDragon', src: 'assets/dungeon/monster-coin-dragon-r71.png?v=1794068100', label: '金幣龍' },
+      { id: 'scrollDragon', src: 'assets/dungeon/monster-scroll-dragon-r71.png?v=1794068100', label: '卷軸龍' },
+      { id: 'calendarImp', src: 'assets/dungeon/monster-calendar-imp-r72.png?v=1794068100', label: '日曆小鬼' },
+      { id: 'heartSlime', src: 'assets/dungeon/monster-heart-slime-r72.png?v=1794068100', label: '愛心史萊姆' },
+      { id: 'giftMimic', src: 'assets/dungeon/monster-gift-mimic-r72.png?v=1794068100', label: '禮物寶箱怪' },
+      { id: 'riverFish', src: 'assets/dungeon/monster-river-fish-r73.png?v=1794068100', label: '河魚' },
+      { id: 'oreGolem', src: 'assets/dungeon/monster-ore-golem-r73.png?v=1794068100', label: '礦石魔像' },
+      { id: 'pickaxeImp', src: 'assets/dungeon/monster-pickaxe-imp-r73.png?v=1794068100', label: '礦鎬小鬼' },
+      { id: 'slimeFlask', src: 'assets/dungeon/monster-slime-flask-r74.png?v=1794068100', label: '燒瓶史萊姆' },
+      { id: 'cauldronImp', src: 'assets/dungeon/monster-cauldron-imp-r74.png?v=1794068100', label: '藥鍋小鬼' },
+      { id: 'herbSprite', src: 'assets/dungeon/monster-herb-sprite-r74.png?v=1794068100', label: '藥草精靈' },
+      { id: 'madChick', src: 'assets/dungeon/monster-mad-chick-r75.png?v=1794068100', label: '狂小雞' },
+      { id: 'woolSheep', src: 'assets/dungeon/monster-wool-sheep-r75.png?v=1794068100', label: '羊毛羊' }
     ],
-    win: 'assets/dungeon/win-chest.png?v=1794068000',
-    winOpen: 'assets/dungeon/win-chest-open.png?v=1794068000',
-    loseCross: 'assets/dungeon/lose-cross.png?v=1794068000',
-    resultVictory: 'assets/ui/result-victory.png?v=1794068000',
-    resultDefeat: 'assets/ui/result-defeat.png?v=1794068000',
-    resultFlee: 'assets/ui/result-flee.png?v=1794068000',
-    loseTomb: 'assets/dungeon/lose-tomb.png?v=1794068000',
-    loseBones: 'assets/dungeon/lose-bones.png?v=1794068000'
+    win: 'assets/dungeon/win-chest.png?v=1794068100',
+    winOpen: 'assets/dungeon/win-chest-open.png?v=1794068100',
+    loseCross: 'assets/dungeon/lose-cross.png?v=1794068100',
+    resultVictory: 'assets/ui/result-victory.png?v=1794068100',
+    resultDefeat: 'assets/ui/result-defeat.png?v=1794068100',
+    resultFlee: 'assets/ui/result-flee.png?v=1794068100',
+    loseTomb: 'assets/dungeon/lose-tomb.png?v=1794068100',
+    loseBones: 'assets/dungeon/lose-bones.png?v=1794068100'
   };
 
   /** head-slot id → dungeon hero id（冇就 fallback） */
   const HERO_SPRITE_MAP = {
-    sword: 'sword', tank: 'tank', spear: 'spear', rogue: 'rogue', knight: 'sword',
-    mage: 'mage', healer: 'healer', archer: 'archer', bard: 'bard', witch: 'mage'
+    sword: 'sword', tank: 'tank', spear: 'spear', rogue: 'rogue', knight: 'knight',
+    mage: 'mage', healer: 'healer', archer: 'archer', bard: 'bard', witch: 'witch'
   };
 
   function heroAssetById(id) {
@@ -1561,7 +1563,8 @@
       partyStatus: {},
       mailRead: false,
       mails: [{ id: 'notice', title: '公會通告', body: '親愛嘅會長：\n本季賃金將於剩餘日數歸零時自動扣款。\n新到雜貨店可購買藥水／解毒劑／乾糧。\n夜間委託報酬略高，記得編成齊人。\n—— 櫃台 莉莉' }],
-      tutorial: { seenTap: false, seenDrag: false, seenHold: false },
+      tutorial: { seenTap: false, seenDrag: false, seenHold: false, seenRecruit: false },
+      bonds: {},
       eventDouble: false,
       eventFestival: false,
       shopStock: { potion: 3, antidote: 2, bread: 4, stew: 2, cake: 2, honey: 3, milk: 3, gift: 2, balloon: 3, dumbbell: 2, target: 2, hammer: 2, nails: 3, blueprint: 1, bombSmoke: 2, mirror: 2, feather: 2, crystalShard: 1, compass: 2, pillow: 3, soap: 3, rod: 2, bait: 4, ore: 3, log: 3, berry: 4, mushroomItem: 3, keySilver: 2, mapScrap: 3, guildPass: 1, potionMana: 3, scrollQuest: 2, charmLuck: 2, thread: 3, woodPlank: 3, oreIron: 3, herbGreen: 4, fishSmall: 4, gemRuby: 1, spice: 3, inkBottle: 3, seedBag: 3, clay: 3, ticket: 2, lanternItem: 2, ropeItem: 3, anchor: 2, arrowBundle: 3, holyWater: 2, pearl: 2, acorn: 4, crownMini: 1, lockpick: 2, tome: 2, bouquet: 3, parcel: 3, flour: 4, horn: 2, leaf: 3, silk: 3, crystalBall: 1, mask: 2, recipe: 3, equipSword: 2, equipBow: 2, equipStaff: 2, equipShield: 2, whetstone: 3, quiver: 2, manaCrystal: 2, trophy: 1, bandage: 4, tarot: 2, taxSeal: 2, lute: 2, herbRed: 4, rum: 2, rosary: 2, hammerSmall: 3, foodPie: 2, foodTea: 3, whip: 2, oar: 2, teapot: 2, coinPurse: 2, giftFlower: 2, giftLetter: 3, pickaxe: 2, shears: 3, matIngot: 3, matCloth: 3, matPotionEmpty: 4, needle: 3, vial: 3, saw: 2, chestBronze: 2, chestSilver: 1, chestGold: 1, keyBronze: 3, keyGold: 1, bookMagic: 2, towel: 4, scale: 2, abacus: 2, torch: 3, mapScroll: 2, foodCandy: 4, ladle: 2, mug: 2, lollipop: 4, eqRingRuby: 1, hammerSmith: 2, polishCloth: 3, gemCutter: 2, bannerFlag: 2, whistle: 3, medkit: 2, waxSeal: 3, quill: 3, inviteCard: 2, cropWheat: 4, cropTomato: 4, cropPumpkin: 3, wateringCan: 2, seedBagNew: 3, rake: 2, petFoodBowl: 2, petToyBall: 2, petRibbon: 3, leash: 2, brush: 2, treat: 4, drumstick: 2, stageTicket: 2, wheel: 2, balloonRope: 2, magnifier: 2, priceTag: 3, gavel: 1, hourglass: 2, lanternNew: 2, ledgerBook: 2, skillBook: 2, focusBead: 2, burnSalve: 2, warmTea: 3, pestle: 2, herbBundle: 3, iceCharm: 2, medalRibbon: 2, scoreboard: 1, speechScroll: 2, inkPot: 3, megaphone: 2, keyring: 2, crate: 3, mapPin: 3, backpack: 1, padlock: 2, sortTag: 3, tacticBoard: 2, powerGlove: 1, wrench: 2, earmuff: 2, dictionary: 2, helpBook: 2, friendToken: 2, questFeather: 2, petal: 4, sunCharm: 2, mapleLeaf: 4, snowflake: 4, stallFlag: 2, onsenTicket: 2, roomKey: 2, shopBell: 2, gemFire: 2, gemWater: 2, gemWind: 2, fireWand: 1, waterFlask: 2, windFan: 2, gemEarth: 2, gemLight: 2, gemDark: 2, earthStaff: 1, holyCross: 2, shadowDagger: 1, plaque: 1, goldSack: 1, historyTome: 2, stampPad: 2, friendLetter: 2, bondCharm: 1, fishingHook: 3, oreChunk: 3, lanternMine: 2, herbLeaf: 4, mortar: 2, emptyPhial: 4, milkPail: 2, feedBag: 3 },
@@ -1608,6 +1611,8 @@
         DEFAULT_RECRUITED.forEach((id) => { if (state.recruited.indexOf(id) < 0) state.recruited.push(id); });
       }
       if (typeof data.recruitVoucher === 'number') state.recruitVoucher = data.recruitVoucher;
+      if (data.bonds && typeof data.bonds === 'object') state.bonds = Object.assign({}, data.bonds);
+      try { ensureExpandQuestsOnBoard(); } catch (e) {}
       if (data.liveBars && typeof data.liveBars === 'object') state.liveBars = data.liveBars;
       if (data.achievements && typeof data.achievements === 'object') state.achievements = data.achievements;
       if (typeof data.wins === 'number') state.wins = data.wins;
@@ -2189,6 +2194,10 @@
     if (q.special && sp.ok) bonus += 10;
     else if (q.special && !sp.ok) bonus -= 4;
     if (n < (q.minHeads || 0)) bonus -= 12; // under-manned penalty (dispatch still blocked)
+    const plist = partyList();
+    let bondB = 0;
+    plist.front.concat(plist.back).forEach((id) => { bondB += Math.floor(bondOf(id) / 20); });
+    bonus += Math.min(8, bondB);
     return bonus;
   }
 
@@ -2369,6 +2378,16 @@
 
   function selectQuest(q) {
     try { showTutorialTip('tap'); } catch (e) {}
+  try { ensureExpandQuestsOnBoard(); renderQuestTiles(); } catch (e) {}
+  try {
+    const paramsBoot = new URLSearchParams(location.search);
+    const demoBoot = paramsBoot.get('demo');
+    if (paramsBoot.get('shot') === 'expand2') {
+      try { if (state.tutorial) state.tutorial.seenRecruit = false; showRecruitTip(true); } catch (e2) {}
+    } else if (demoBoot !== 'expand1' && demoBoot !== 'expand2') {
+      setTimeout(function () { try { showRecruitTip(); } catch (e2) {} }, 1600);
+    }
+  } catch (e) {}
     selectedQuestId = q.id;
     const st = state.quests[q.id];
     if (!state.assigned[q.id]) state.assigned[q.id] = [];
@@ -2585,7 +2604,17 @@
       try { flashFx('coin'); flashFx('levelup'); flashFx('levelSpark'); flashFx('expOrb'); celebrateFx('both'); flashRankFx(repDelta >= 6 ? 'perfect' : 'great'); } catch (e) {}
       checkAchievements();
       const namesW = partyList().front.concat(partyList().back).map(memberLabel).join('、') || '隊伍';
-      say(`凱旋～「${q.name}」勝出！${namesW} 帶回＋${goldDelta} 金、聲譽＋${repDelta}（而家 ${state.rep}）。可以撳「換一批」或過日刷新委託～`);
+      try {
+        partyList().front.concat(partyList().back).forEach((id) => {
+          let n = 8;
+          if ((q.special || '').indexOf('女騎士') >= 0 && id === 'knight') n += 6;
+          if ((q.special || '').indexOf('魔女') >= 0 && id === 'witch') n += 6;
+          addBond(id, n, true);
+        });
+        flashFriendship();
+      } catch (e) {}
+      const bondHint = partyList().front.concat(partyList().back).filter((id) => bondOf(id) > 0).map((id) => memberLabel(id) + '羈絆' + bondOf(id)).join('、');
+      say(`凱旋～「${q.name}」勝出！${namesW} 帶回＋${goldDelta} 金、聲譽＋${repDelta}（而家 ${state.rep}）` + (bondHint ? `。${bondHint}` : '') + '。可以撳「換一批」或過日刷新委託～');
       toast(`勝利！＋${goldDelta} 金 · 聲譽＋${repDelta}`, 'ok');
     } else {
       goldDelta = Math.max(8, Math.floor(q.reward * 0.08));
@@ -2598,6 +2627,7 @@
       flashStamp('reject');
       try { flashRankFx('miss'); } catch (e) {}
       const namesL = partyList().front.concat(partyList().back).map(memberLabel).join('、') || '隊伍';
+      try { partyList().front.concat(partyList().back).forEach((id) => addBond(id, 2, true)); } catch (e) {}
       say(`「${q.name}」惜敗…${namesL} 帶回安慰金＋${goldDelta}，聲譽 ${repDelta}（而家 ${state.rep}）。調整編成或補給再試啦。`);
       toast(`敗北…＋${goldDelta} 金 · 聲譽${repDelta}`, 'warn');
     }
@@ -2695,6 +2725,66 @@
   function memberLabel(id) {
     const m = members[id] || {};
     return (m.name ? m.name + '・' : '') + (m.job || id);
+  }
+  const EXPAND1_QUESTS = ['newcomerWelcome', 'knightTrial', 'witchBrewEscort'];
+  function bondOf(id) {
+    return (state.bonds && state.bonds[id]) || 0;
+  }
+  function addBond(id, n, silent) {
+    if (!id) return;
+    if (typeof isRecruited === 'function' && !isRecruited(id)) return;
+    if (!state.bonds) state.bonds = {};
+    const before = state.bonds[id] || 0;
+    state.bonds[id] = Math.max(0, Math.min(100, before + (n || 0)));
+    if (!silent && state.bonds[id] > before) {
+      try { flashFriendship(); } catch (e) {}
+    }
+  }
+  function ensureExpandQuestsOnBoard() {
+    if (!Array.isArray(state.board) || state.board.length !== 3) return;
+    const missing = EXPAND1_QUESTS.filter((id) => state.board.indexOf(id) < 0);
+    if (!missing.length) return;
+    let mi = 0;
+    for (let i = 0; i < state.board.length && mi < missing.length; i++) {
+      const id = state.board[i];
+      if (EXPAND1_QUESTS.indexOf(id) >= 0) continue;
+      const st = state.quests[id];
+      if (st && (st.status === 'accepted' || st.status === 'active')) continue;
+      const nid = missing[mi++];
+      try { if (typeof clearQuestRefs === 'function') clearQuestRefs(id); } catch (e) {}
+      state.board[i] = nid;
+      if (!state.quests[nid] || state.quests[nid].status === 'done') {
+        state.quests[nid] = { status: 'open', result: null, rateAtDispatch: null };
+      }
+      if (selectedQuestId === id) selectedQuestId = nid;
+    }
+    state.pendingExpandQuests = missing.slice(mi);
+  }
+  function showRecruitTip(force) {
+    try { if (typeof ensureTutorialSeen === 'function') ensureTutorialSeen(); } catch (e) {}
+    if (!force && state.tutorial && state.tutorial.seenRecruit) return;
+    if (!state.tutorial) state.tutorial = {};
+    state.tutorial.seenRecruit = true;
+    saveState();
+    let tip = document.getElementById('tutorial-tip');
+    if (!tip) {
+      tip = document.createElement('div');
+      tip.id = 'tutorial-tip';
+      tip.className = 'tutorial-tip';
+      const host = document.getElementById('app') || document.body;
+      host.appendChild(tip);
+    }
+    tip.className = 'tutorial-tip tip-recruit';
+    tip.innerHTML =
+      '<img class="tip-arrow" src="assets/ui/guide-arrow-up.png?v=' + ASSET_V + '" alt=""/>' +
+      '<img class="tip-hand" src="assets/ui/guide-hand-tap.png?v=' + ASSET_V + '" alt=""/>' +
+      '<span>撳「招募」請希琳／薇爾入會～</span>' +
+      '<button type="button" class="tip-ok" id="tip-dismiss">知道了</button>';
+    tip.hidden = false;
+    const d = document.getElementById('tip-dismiss');
+    if (d) d.onclick = () => { tip.hidden = true; };
+    clearTimeout(showRecruitTip._t);
+    showRecruitTip._t = setTimeout(() => { tip.hidden = true; }, 5200);
   }
 
 
@@ -2980,6 +3070,7 @@
     }
     if (!state.recruited) state.recruited = DEFAULT_RECRUITED.slice();
     state.recruited.push(id);
+    try { addBond(id, 15); } catch (e) {}
     updateEconomyUI();
     renderPartyStrips();
     syncHeadActiveUI();
@@ -3014,7 +3105,7 @@
         '<img class="recruit-full" src="' + chibiFullSrc(row.id) + '" alt="' + (info.job || '') + '"/>' +
         '<img class="recruit-head" src="' + chibiHeadSrc(row.id) + '" alt=""/>' +
         '<div class="recruit-meta"><b>' + memberLabel(row.id) + '</b><small>' + (info.line || row.line) +
-        (hired ? ' · 已入會' : ' · 招募費 ' + fee + ' 金') +
+        (hired ? ' · 已入會 · 羈絆 ' + bondOf(row.id) : ' · 招募費 ' + fee + ' 金') +
         (inParty ? ' · 編成中' : '') + '</small></div>' +
         (hired
           ? '<button type="button" class="recruit-btn" data-form="' + row.id + '">' + (inParty ? '已編成' : '去編成') + '</button>'
@@ -3060,6 +3151,23 @@
         img.src = chibiHeadSrc(row.id);
         img.alt = info.job || row.role;
         btn.appendChild(img);
+        if (!isRecruited(row.id)) {
+          const lock = document.createElement('img');
+          lock.className = 'lock-mark';
+          lock.alt = '未入會';
+          lock.src = 'assets/ui/party-slot-locked.png?v=' + ASSET_V;
+          btn.appendChild(lock);
+          const tag = document.createElement('span');
+          tag.className = 'unhired-tag';
+          tag.textContent = '未入會';
+          btn.appendChild(tag);
+        } else if (bondOf(row.id) >= 20) {
+          const ht = document.createElement('span');
+          ht.className = 'bond-pip';
+          ht.title = '羈絆 ' + bondOf(row.id);
+          ht.textContent = '♥' + bondOf(row.id);
+          btn.appendChild(ht);
+        }
         host.appendChild(btn);
       });
     }
@@ -3480,8 +3588,11 @@
 
 
   function resolveLaneHero(q) {
-    // prefer first selected front, then back; map to dungeon sprite
     const party = state.party || { front: [], back: [] };
+    const all = (party.front || []).concat(party.back || []);
+    const special = (q && q.special) || '';
+    if (special.indexOf('女騎士') >= 0 && all.indexOf('knight') >= 0) return heroAssetById('knight');
+    if (special.indexOf('魔女') >= 0 && all.indexOf('witch') >= 0) return heroAssetById('witch');
     const pick = (party.front && party.front[0]) || (party.back && party.back[0]);
     if (pick) return heroAssetById(pick);
     return DUNGEON_ASSETS.heroes[q.laneHero % DUNGEON_ASSETS.heroes.length];
@@ -3495,6 +3606,7 @@
     const mon = q.monsterId ? monsterAssetById(q.monsterId)
       : DUNGEON_ASSETS.monsters[q.laneMonster % DUNGEON_ASSETS.monsters.length];
     ui.party.querySelector('img').src = hero.src;
+    ui.party.classList.toggle('chibi-hero', !!(hero && (hero.id === 'knight' || hero.id === 'witch')));
     ui.monster.querySelector('img').src = mon.src;
 
     clearLaneLog(tag);
@@ -3695,6 +3807,13 @@
   /* —— 委託刷新 —— */
   function pickFreshQuestId(exclude) {
     const ex = new Set(exclude || []);
+    if (Array.isArray(state.pendingExpandQuests) && state.pendingExpandQuests.length) {
+      const nxt = state.pendingExpandQuests.find((id) => !ex.has(id));
+      if (nxt) {
+        state.pendingExpandQuests = state.pendingExpandQuests.filter((id) => id !== nxt);
+        return nxt;
+      }
+    }
     const pool = QUEST_POOL.filter((q) => !ex.has(q.id));
     if (!pool.length) return null;
     state.seed = (state.seed * 1664525 + 1013904223) >>> 0;
@@ -4836,7 +4955,11 @@
       '<img class="bond-ico" src="assets/icons/bond-heart.png?v=' + ASSET_V + '" alt="羈絆心"/>' +
       '<img class="bond-ico" src="assets/icons/friend-token.png?v=' + ASSET_V + '" alt="友情信物"/>' +
       '<img class="bond-ico" src="assets/icons/bond-ring.png?v=' + ASSET_V + '" alt="羈絆戒指"/>' +
-      '<span class="bond-label">羈絆 · 好友信物</span></div></div>';
+      '<span class="bond-label">羈絆 · 好友信物</span></div>' +
+      ((state.bonds && Object.keys(state.bonds).length)
+        ? '<div class="bond-party">' + Object.keys(state.bonds).filter((id) => bondOf(id) > 0).map((id) => memberLabel(id) + ' ' + bondOf(id)).join(' · ') + '</div>'
+        : '') +
+      '</div>';
   }
 
   function openDayModal() {
@@ -5587,6 +5710,16 @@
   try { applyModalChromeBtns(); showBootSplash(1100); } catch (e) {}
   try { syncGuestHeart(); } catch (e) {}
   try { showTutorialTip('tap'); } catch (e) {}
+  try { ensureExpandQuestsOnBoard(); renderQuestTiles(); } catch (e) {}
+  try {
+    const paramsBoot = new URLSearchParams(location.search);
+    const demoBoot = paramsBoot.get('demo');
+    if (paramsBoot.get('shot') === 'expand2') {
+      try { showRecruitTip(); } catch (e2) {}
+    } else if (demoBoot !== 'expand1' && demoBoot !== 'expand2') {
+      setTimeout(function () { try { showRecruitTip(); } catch (e2) {} }, 1600);
+    }
+  } catch (e) {}
 
   // demo / screenshot helpers
   async function runDemoPlaythrough() {
@@ -5627,6 +5760,7 @@
     const hero = resolveLaneHero(q2);
     const mon = q2.monsterId ? monsterAssetById(q2.monsterId) : DUNGEON_ASSETS.monsters[q2.laneMonster % DUNGEON_ASSETS.monsters.length];
     ui.party.querySelector('img').src = hero.src;
+    ui.party.classList.toggle('chibi-hero', !!(hero && (hero.id === 'knight' || hero.id === 'witch')));
     ui.monster.querySelector('img').src = mon.src;
     resetLaneVisual('C');
     ui.party.classList.remove('hidden-actor');
@@ -5673,7 +5807,42 @@
     renderQuestTiles();
   }
 
-  if (demo === 'expand1') {
+  if (demo === 'expand2') {
+    try {
+      if (!state.recruited) state.recruited = DEFAULT_RECRUITED.slice();
+      if (state.recruited.indexOf('knight') < 0) state.recruited.push('knight');
+      if (state.recruited.indexOf('witch') < 0) state.recruited.push('witch');
+      state.party = { front: ['knight', 'sword'], back: ['witch', 'mage'], leader: 'knight' };
+      state.bonds = Object.assign({}, state.bonds, { knight: Math.max(bondOf('knight'), 36), witch: Math.max(bondOf('witch'), 28) });
+      state.board = ['newcomerWelcome', 'knightTrial', 'witchBrewEscort'];
+      ['newcomerWelcome', 'knightTrial', 'witchBrewEscort'].forEach((id) => {
+        if (!state.quests[id]) state.quests[id] = { status: 'open', result: null, rateAtDispatch: null };
+      });
+      renderPartyStrips();
+      syncHeadActiveUI();
+      updateEconomyUI();
+      renderQuestTiles();
+      const mon = monsterAssetById('ironKnight');
+      const hero = heroAssetById('knight');
+      const ui = laneUi.A;
+      if (ui) {
+        ui.party.querySelector('img').src = hero.src;
+        ui.party.classList.add('chibi-hero');
+        ui.monster.querySelector('img').src = mon.src;
+        resetLaneVisual('A');
+        ui.party.classList.remove('hidden-actor');
+        ui.monster.classList.remove('hidden-actor');
+        setLeft(ui.party, 38);
+        setLeft(ui.monster, 58);
+        ui.party.classList.add('fighting');
+        ui.monster.classList.add('fighting');
+        ui.lane.className = 'dungeon-lane phase-fight busy';
+        if (ui.fx) { ui.fx.textContent = '希琳出戰'; ui.fx.className = 'lane-fx show'; }
+      }
+      sayAs('partyRecruiter', '女騎士希琳喺跑道上——呢次唔再借用劍士像素啦！');
+      toast('自由擴展② 地城精靈', 'ok');
+    } catch (e) { console.warn(e); }
+  } else if (demo === 'expand1') {
     try {
       state.gold = Math.max(state.gold || 0, 200);
       state.board = ['newcomerWelcome', 'knightTrial', 'witchBrewEscort'];
@@ -5744,7 +5913,42 @@
       ui.fx.className = 'lane-fx show';
     }
     try { ensureDialogueChrome(); } catch (e) {}
-    if (demo === 'expand1') {
+    if (demo === 'expand2') {
+    try {
+      if (!state.recruited) state.recruited = DEFAULT_RECRUITED.slice();
+      if (state.recruited.indexOf('knight') < 0) state.recruited.push('knight');
+      if (state.recruited.indexOf('witch') < 0) state.recruited.push('witch');
+      state.party = { front: ['knight', 'sword'], back: ['witch', 'mage'], leader: 'knight' };
+      state.bonds = Object.assign({}, state.bonds, { knight: Math.max(bondOf('knight'), 36), witch: Math.max(bondOf('witch'), 28) });
+      state.board = ['newcomerWelcome', 'knightTrial', 'witchBrewEscort'];
+      ['newcomerWelcome', 'knightTrial', 'witchBrewEscort'].forEach((id) => {
+        if (!state.quests[id]) state.quests[id] = { status: 'open', result: null, rateAtDispatch: null };
+      });
+      renderPartyStrips();
+      syncHeadActiveUI();
+      updateEconomyUI();
+      renderQuestTiles();
+      const mon = monsterAssetById('ironKnight');
+      const hero = heroAssetById('knight');
+      const ui = laneUi.A;
+      if (ui) {
+        ui.party.querySelector('img').src = hero.src;
+        ui.party.classList.add('chibi-hero');
+        ui.monster.querySelector('img').src = mon.src;
+        resetLaneVisual('A');
+        ui.party.classList.remove('hidden-actor');
+        ui.monster.classList.remove('hidden-actor');
+        setLeft(ui.party, 38);
+        setLeft(ui.monster, 58);
+        ui.party.classList.add('fighting');
+        ui.monster.classList.add('fighting');
+        ui.lane.className = 'dungeon-lane phase-fight busy';
+        if (ui.fx) { ui.fx.textContent = '希琳出戰'; ui.fx.className = 'lane-fx show'; }
+      }
+      sayAs('partyRecruiter', '女騎士希琳喺跑道上——呢次唔再借用劍士像素啦！');
+      toast('自由擴展② 地城精靈', 'ok');
+    } catch (e) { console.warn(e); }
+  } else if (demo === 'expand1') {
       try {
         state.gold = Math.max(state.gold || 0, 200);
         state.board = ['newcomerWelcome', 'knightTrial', 'witchBrewEscort'];

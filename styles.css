@@ -1279,7 +1279,7 @@ button {
 /* round4: weather + frames (subtle) + trap marker */
 #weather-ico { width: 14px; height: 14px; }
 .dialogue.framed {
-  background-image: url('assets/ui/bubble-speech.png?v=1794068000');
+  background-image: url('assets/ui/bubble-speech.png?v=1794068100');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1414,12 +1414,12 @@ button {
   cursor: url('assets/ui/cursor-talk.png?v=1794058800') 4 0, pointer;
 }
 .slot.empty {
-  background-image: url('assets/ui/inv-slot.png?v=1794068000');
+  background-image: url('assets/ui/inv-slot.png?v=1794068100');
   background-size: cover;
   background-position: center;
 }
 .slot.locked {
-  background-image: url('assets/ui/inv-lock.png?v=1794068000');
+  background-image: url('assets/ui/inv-lock.png?v=1794068100');
   background-size: cover;
   background-position: center;
   opacity: .85;
@@ -2950,3 +2950,103 @@ button {
   cursor: pointer;
 }
 .recruit-btn.hire { background: linear-gradient(180deg, #cde8b0, #7bb87b); }
+
+
+/* —— expand2：隊伍頭圖放大／鎖位清楚／希琳薇爾地城精靈／招募提示 —— */
+.side-rail { width: 56px; }
+.head-slot {
+  border-radius: 9px;
+  overflow: hidden;
+}
+.head-slot img {
+  object-fit: cover;
+  object-position: center 16%;
+  transform: scale(1.16);
+  transform-origin: center 18%;
+  background: #f3e0c4;
+  image-rendering: auto;
+}
+.head-slot.locked {
+  opacity: 1;
+  filter: none;
+  background: #e8d4b8;
+  border-style: dashed;
+  box-shadow: inset 0 0 0 1px rgba(90, 60, 40, .22);
+}
+.head-slot.locked img {
+  opacity: .48;
+  filter: grayscale(.35) saturate(.7);
+  transform: scale(1.08);
+}
+.head-slot .lock-mark {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,.35));
+}
+.head-slot .unhired-tag {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  z-index: 3;
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-align: center;
+  color: #5a3a22;
+  background: rgba(255, 236, 210, .92);
+  line-height: 1.2;
+  padding: 1px 0;
+  pointer-events: none;
+}
+.head-slot .bond-pip {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  z-index: 3;
+  font-size: 6px;
+  font-weight: 800;
+  color: #8a3048;
+  background: rgba(255, 236, 232, .92);
+  border-radius: 4px;
+  padding: 0 2px;
+  line-height: 1.2;
+  pointer-events: none;
+}
+.tutorial-tip.tip-recruit {
+  top: auto;
+  bottom: 36%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 92%;
+  width: max-content;
+  font-size: 11px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+.tutorial-tip.tip-recruit span { white-space: nowrap; }
+.tutorial-tip.tip-recruit .tip-ok { flex-shrink: 0; writing-mode: horizontal-tb; }
+.tutorial-tip .tip-hand {
+  width: 28px;
+  height: 28px;
+  image-rendering: pixelated;
+}
+.lane-actor.chibi-hero img,
+.lane-actor img[src*="hero-knight"],
+.lane-actor img[src*="hero-witch"] {
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+.bond-party {
+  margin-top: 4px;
+  font-size: 10px;
+  color: #6a3a2a;
+  line-height: 1.35;
+}
