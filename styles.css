@@ -1279,7 +1279,7 @@ button {
 /* round4: weather + frames (subtle) + trap marker */
 #weather-ico { width: 14px; height: 14px; }
 .dialogue.framed {
-  background-image: url('assets/ui/bubble-speech.png?v=1794068200');
+  background-image: url('assets/ui/bubble-speech.png?v=1794068300');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1414,12 +1414,12 @@ button {
   cursor: url('assets/ui/cursor-talk.png?v=1794058800') 4 0, pointer;
 }
 .slot.empty {
-  background-image: url('assets/ui/inv-slot.png?v=1794068200');
+  background-image: url('assets/ui/inv-slot.png?v=1794068300');
   background-size: cover;
   background-position: center;
 }
 .slot.locked {
-  background-image: url('assets/ui/inv-lock.png?v=1794068200');
+  background-image: url('assets/ui/inv-lock.png?v=1794068300');
   background-size: cover;
   background-position: center;
   opacity: .85;
@@ -3175,4 +3175,118 @@ button {
   0% { opacity: 0; transform: scale(.35); }
   35% { opacity: 1; transform: scale(1.18); }
   100% { opacity: 0; transform: scale(1.45); }
+}
+
+
+/* —— expand4：戰鬥收起庫存／雙跑道入鏡／頭像對準提示／贈送揀人／Q 版怪物 —— */
+#app { position: relative; }
+.equip-slots { margin: 2px 8px 2px; gap: 6px; }
+.eq-slot { width: 32px; height: 32px; }
+.inventory {
+  max-height: 76px !important;
+  overflow-y: auto;
+}
+.inventory .slot { max-height: 28px; }
+.inv-combat-bar {
+  display: none;
+  width: 100%;
+  margin: 0 0 3px;
+  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .03em;
+  color: #5a3a22;
+  background: linear-gradient(180deg, #ffe9c4, #f0d09a);
+  border: 2px solid var(--k-gold);
+  border-radius: 8px;
+  cursor: pointer;
+}
+#app.dungeon-focus .inv-combat-bar { display: flex; justify-content: center; align-items: center; }
+#app.dungeon-focus-open .inv-combat-bar { display: flex; justify-content: center; align-items: center; }
+#app.dungeon-focus .equip-slots,
+#app.dungeon-focus .inventory,
+#app.dungeon-focus .inv-tabs,
+#app.dungeon-focus .inv-filters,
+#app.dungeon-focus .inv-empty-wrap,
+#app.dungeon-focus .inv-label,
+#app.dungeon-focus .btn-auto { display: none !important; }
+#app.dungeon-focus .inventory-wrap { padding: 2px 12px 0; }
+#app.dungeon-focus .inv-header { margin: 0; min-height: 0; }
+#app.dungeon-focus .dungeon-wrap {
+  min-height: 220px;
+  max-height: 46vh;
+}
+#app.dungeon-focus .dungeon-lanes { min-height: 190px; }
+.head-slot.head-guide {
+  box-shadow: 0 0 0 2px #f0c86a, 0 0 8px rgba(242, 193, 78, .85);
+  animation: head-guide-pulse 1s ease-in-out infinite;
+  z-index: 5;
+}
+@keyframes head-guide-pulse {
+  0%, 100% { box-shadow: 0 0 0 2px #f0c86a, 0 0 6px rgba(242, 193, 78, .7); }
+  50% { box-shadow: 0 0 0 3px #ffe08a, 0 0 12px rgba(242, 193, 78, .95); }
+}
+.tutorial-tip.tip-party { z-index: 45; }
+.bond-gift-pop {
+  position: absolute;
+  inset: 0;
+  z-index: 70;
+  background: rgba(40, 28, 18, .38);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.bond-gift-pop[hidden] { display: none !important; }
+.bond-gift-card {
+  background: linear-gradient(180deg, #fffaf0, #f3e0c0);
+  border: 2px solid var(--k-wood);
+  border-radius: 12px;
+  padding: 10px 10px 8px;
+  max-width: 88%;
+  max-height: 72%;
+  overflow: auto;
+  box-shadow: 0 8px 22px rgba(60, 40, 28, .28);
+}
+.bond-gift-card p {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #5a3a22;
+  text-align: center;
+}
+.bond-gift-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+.bond-pick {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px;
+  border: 2px solid var(--k-wood);
+  border-radius: 9px;
+  background: #fff8ec;
+  cursor: pointer;
+  text-align: left;
+}
+.bond-pick img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center 20%;
+  background: #f3e0c4;
+  flex-shrink: 0;
+}
+.bond-pick span { display: flex; flex-direction: column; min-width: 0; }
+.bond-pick b { font-size: 11px; color: #4a2e18; }
+.bond-pick small { font-size: 9px; color: #7a5a40; }
+.bond-gift-card .tip-ok { display: block; margin: 0 auto; }
+.lane-actor.chibi-mon img,
+.lane-actor.monster img[src*="q-monster-"] {
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
 }
