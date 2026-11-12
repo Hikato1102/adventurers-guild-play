@@ -105,7 +105,7 @@ button {
   position: relative;
   z-index: 2;
   display: flex;
-  gap: 8px;
+  gap: 6px;
   padding: 10px 12px 6px;
   flex: 0 0 auto;
 }
@@ -173,7 +173,7 @@ button {
 }
 
 .side-rail {
-  width: 44px;
+  width: 50px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -1279,7 +1279,7 @@ button {
 /* round4: weather + frames (subtle) + trap marker */
 #weather-ico { width: 14px; height: 14px; }
 .dialogue.framed {
-  background-image: url('assets/ui/bubble-speech.png?v=1794067900');
+  background-image: url('assets/ui/bubble-speech.png?v=1794068000');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -1414,12 +1414,12 @@ button {
   cursor: url('assets/ui/cursor-talk.png?v=1794058800') 4 0, pointer;
 }
 .slot.empty {
-  background-image: url('assets/ui/inv-slot.png?v=1794067900');
+  background-image: url('assets/ui/inv-slot.png?v=1794068000');
   background-size: cover;
   background-position: center;
 }
 .slot.locked {
-  background-image: url('assets/ui/inv-lock.png?v=1794067900');
+  background-image: url('assets/ui/inv-lock.png?v=1794068000');
   background-size: cover;
   background-position: center;
   opacity: .85;
@@ -2888,3 +2888,65 @@ button {
   top: 0;
   right: 0;
 }
+
+
+/* —— expand1：招募／五人編成 —— */
+.quest-toolbar { max-height: none; overflow: visible; }
+.head-slot img {
+  object-fit: contain;
+  object-position: center 20%;
+  transform: none;
+  background: #1a1210;
+}
+.head-slot.locked { opacity: .72; filter: grayscale(.15); }
+.head-slot.locked img { opacity: .85; }
+.recruit-hint {
+  font-size: 11px;
+  line-height: 1.35;
+  margin: 4px 0 8px;
+  color: var(--k-ink);
+}
+.recruit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  max-height: 62vh;
+  overflow: auto;
+  padding-bottom: 6px;
+}
+.recruit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 4px 6px;
+  border: 2px solid var(--k-wood);
+  border-radius: 10px;
+  background: linear-gradient(180deg, #fffaf0, #f3e0c0);
+}
+.recruit-card.hired { border-color: #6aaa4a; }
+.recruit-card.focus { box-shadow: 0 0 0 2px rgba(242,193,78,.7); }
+.recruit-card .recruit-full {
+  width: 100%;
+  height: 96px;
+  object-fit: contain;
+  object-position: center bottom;
+  image-rendering: auto;
+  background: #2a2018;
+  border-radius: 8px;
+}
+.recruit-card .recruit-head { display: none; }
+.recruit-meta { text-align: center; }
+.recruit-meta b { display: block; font-size: 11px; }
+.recruit-meta small { font-size: 9px; color: var(--k-shade); }
+.recruit-btn {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 2px solid var(--k-frame);
+  background: linear-gradient(180deg, #ffe08a, var(--k-gold));
+  color: #3a2a10;
+  cursor: pointer;
+}
+.recruit-btn.hire { background: linear-gradient(180deg, #cde8b0, #7bb87b); }
